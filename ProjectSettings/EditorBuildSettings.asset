@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level Pack  Menu.unity
     guid: 866d48d26c600ee4f8f96bea8e7431d3
+  - enabled: 1
+    path: Assets/Scenes/Tutorial Pack.unity
+    guid: c510e07cab3f0d846ba62c3451be74dc
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 1.unity
+    guid: 09275ef5580967245851b01fe097992a
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 2.unity
+    guid: 50c5126e71d7b954a9201f3d9783454a
   m_configObjects: {}
