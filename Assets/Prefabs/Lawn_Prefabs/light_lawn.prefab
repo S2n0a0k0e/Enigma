@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6083549415517630211}
   - component: {fileID: 6083549415517630210}
   - component: {fileID: 533910061938563875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: light_lawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
