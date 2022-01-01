@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     void Update ()
     {
         MoveMouse ();
-        // VelocityChanger ();
+        VelocityChanger ();
         detectedCollision = false;
     }
 
@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
 
     void VelocityChanger ()
     {
-        float changeVelocity = 0.01f;
+        float changeVelocity = 0.02f;
         if(rb.velocity.x > 0) 
         {
             rb.velocity = rb.velocity + new Vector2(-changeVelocity, 0f);
@@ -103,133 +103,7 @@ public class Player : MonoBehaviour
     {
         if (col.tag == "UnmovableBlock" && detectedCollision == false)
         {
-            // float xVel;
-            // float yVel;
-            
-            //  if(col.transform.position.x + 0.5f < transform.position.x){
-            //     if(col.transform.position.y + 0.5f < transform.position.y)
-            //     {
-            //         // rb.position = rb.position * new Vector2(1f, 0f);
-            //         // rb.position = rb.position + new Vector2(0f,col.transform.position.y + 0.8f);
-            //         if(rb.velocity.y <= 0){
-            //             yVel = rb.velocity.y;
-            //             if(yVel <= 0)
-            //             {
-            //                 yVel *= -1;
-            //             }
-            //             rb.velocity =new Vector2(rb.velocity.x,yVel);
-            //         }
-            //         if(rb.velocity.x <= 0){
-            //             xVel = rb.velocity.x;
-            //             if(xVel <= 0)
-            //             {
-            //                 xVel *= -1;
-            //             }
-            //             rb.velocity =new Vector2(xVel, rb.velocity.y);
-            //         }
-            //         // rb.velocity = new Vector2(-rb.velocity.y,-rb.velocity.x);
-            //         // rb.velocity = new Vector2(0f, 0f);
-            //         return;
-            //     }
-            //     else if(col.transform.position.y + 0.5f > transform.position.y && col.transform.position.y - 0.5f < transform.position.y)
-            //     {
-            //         rb.position = rb.position * new Vector2(0f, 1f);
-            //         rb.position = rb.position + new Vector2(col.transform.position.x + 0.8f, 0f); 
-            //         xVel = rb.velocity.x;
-            //         xVel *= -1;
-            //         rb.velocity =new Vector2(xVel, rb.velocity.y);
-            //         // rb.velocity = rb.velocity * (new Vector2(-1f, 1f));
-            //         return;
-            //     }
-            //     else
-            //     {
-            //         if(rb.velocity.y >= 0){
-            //             yVel = rb.velocity.y;
-            //             if(yVel >= 0)
-            //             {
-            //                 yVel *= -1;
-            //             }
-            //             rb.velocity =new Vector2(rb.velocity.x,yVel);
-            //         }
-            //         if(rb.velocity.x <= 0){
-            //             xVel = rb.velocity.x;
-            //             if(xVel <= 0)
-            //             {
-            //                 xVel *= -1;
-            //             }
-            //             rb.velocity =new Vector2(xVel, rb.velocity.y);
-            //         }
-            //         // rb.velocity = new Vector2(-rb.velocity.y,-rb.velocity.x);
-            //         // rb.velocity = new Vector2(0f, 0f);
-            //         return;
-            //     }           
-            //  }
-            //  else if(col.transform.position.x - 0.5f > transform.position.x){
-            //     if(col.transform.position.y + 0.5f < transform.position.y)
-            //     {
-            //         if(rb.velocity.y <= 0){
-            //             yVel = rb.velocity.y;
-            //             if(yVel <= 0)
-            //             {
-            //                 yVel *= -1;
-            //             }
-            //             rb.velocity =new Vector2(rb.velocity.x,yVel);
-            //         }
-            //         if(rb.velocity.x >= 0){
-            //             xVel = rb.velocity.x;
-            //             if(xVel >= 0)
-            //             {
-            //                 xVel *= -1;
-            //             }
-            //             rb.velocity =new Vector2(xVel, rb.velocity.y);
-            //         }
-            //         // rb.velocity = new Vector2(-rb.velocity.y,-rb.velocity.x);
-            //         // rb.velocity = new Vector2(0f, 0f);
-            //         return;
-            //     }
-            //     else if(col.transform.position.y + 0.5f > transform.position.y && col.transform.position.y - 0.5f < transform.position.y)
-            //     {
-            //         rb.position = rb.position * new Vector2(0f, 1f);
-            //         rb.position = rb.position + new Vector2(col.transform.position.x - 0.8f, 0f);
-            //         xVel = rb.velocity.x;
-            //         xVel *= -1;
-            //         rb.velocity =new Vector2(xVel, rb.velocity.y);
-            //         // rb.velocity = rb.velocity * (new Vector2(-1f, 1f));
-            //         return;
-            //     }
-            //     else
-            //     {
-            //         if(rb.velocity.y >= 0){
-            //             yVel = rb.velocity.y;
-            //             if(yVel >= 0)
-            //             {
-            //                 yVel *= -1;
-            //             }
-            //             rb.velocity =new Vector2(rb.velocity.x,yVel);
-            //         }
-            //         if(rb.velocity.x >= 0){
-            //             xVel = rb.velocity.x;
-            //             if(xVel >= 0)
-            //             {
-            //                 xVel *= -1;
-            //             }
-            //             rb.velocity =new Vector2(xVel, rb.velocity.y);
-            //         }
-            //         // rb.velocity = new Vector2(-rb.velocity.y,-rb.velocity.x);
-            //         // rb.velocity = new Vector2(0f, 0f);
-            //         return;
-            //     }           
-            //  }
-            //  else
-            //  {
-                
-            //     yVel = rb.velocity.y;
-            //         yVel *= -1;
-            //         rb.velocity =new Vector2(rb.velocity.x, yVel);
-            //         return;
-            //  }
-            // Debug.Log("uderzenie");
-            // detectedCollision = true;
+        
         return;
         }
     }
