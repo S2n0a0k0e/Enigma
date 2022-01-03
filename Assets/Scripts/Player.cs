@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public float mouseY1 = 0f;
     public float mouseY2 = 0f;
     public float deltaY = 0f;
+    float range;
     public Rigidbody2D rb;
     bool detectedCollision = false;
     
@@ -50,7 +51,7 @@ public class Player : MonoBehaviour
 
     void VelocityChanger ()
     {
-        float changeVelocity = 0.02f;
+        float changeVelocity = 0.04f;
         if(rb.velocity.x > 0) 
         {
             rb.velocity = rb.velocity + new Vector2(-changeVelocity, 0f);
@@ -84,13 +85,15 @@ public class Player : MonoBehaviour
                 deltaY *= -1;
             }
             if(deltaX != 0){
-                deltaX = Mathf.Log(deltaX);
+                deltaX = Mathf.Log(deltaX) + 1f;
             }
             if(deltaY != 0){
-                deltaY = Mathf.Log(deltaY);
+                deltaY = Mathf.Log(deltaY) + 1f;
             }
-            deltaX /= 20;
-            deltaY /= 20;
+            Debug.Log(deltaX);
+            Debug.Log(deltaY);
+            deltaX /= 15;
+            deltaY /= 15;
             
             // Debug.Log(deltaX);
             // Debug.Log(deltaY);
