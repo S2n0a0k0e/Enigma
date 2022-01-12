@@ -6,9 +6,11 @@ public class CursorScript : MonoBehaviour
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
+    public bool visible;
     void Start()
     {
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+        Cursor.visible = visible;
     }
 
 }

@@ -117,7 +117,7 @@ public class Player : MonoBehaviour
             Event e = Event.current;
             mouseX1 = Input.GetAxis("Mouse X");
             mouseY1 = Input.GetAxis("Mouse Y");
-            Debug.Log(mouseX1);
+            // Debug.Log(mouseX1);
             // deltaY = mouseY1 - mouseY2;
             // deltaX = mouseX1 - mouseX2;
             // Debug.Log(deltaX);
@@ -137,7 +137,7 @@ public class Player : MonoBehaviour
             // Debug.Log(deltaY);
             mouseX1 /= 15;
             mouseY1 /= 15;
-            // Debug.Log(mouseX1);
+             Debug.Log(mouseX1);
 
             if(mouseX1 < 0.1f && mouseX1 > 0f){
                 mouseX1 = 0.08f;
