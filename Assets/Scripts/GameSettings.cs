@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameSettings : MonoBehaviour
 {
@@ -8,6 +9,12 @@ public class GameSettings : MonoBehaviour
     int tableSize;
     [SerializeField] int[] listOfAll;
     [SerializeField] int[] shuffledList;
+
+    [SerializeField] Sprite[] colors;
+
+    [SerializeField] GameObject[] oxydes;
+
+    public Image colorDot;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +22,7 @@ public class GameSettings : MonoBehaviour
         listOfAll = new int[tableSize];
         shuffledList= new int[tableSize];
         shuffleOxydes();
-        
-        
+        colorDots();    
     }
 
     // Update is called once per frame
@@ -37,6 +43,13 @@ public class GameSettings : MonoBehaviour
                 listOfAll[k] = listOfAll[k+1];
             }
             tableSize--;
+        }
+    }
+
+    private void colorDots(){
+        for(int i = 0; i < 2*oxydePairs; i++){  
+                colorDot = oxydes[i].GetComponent<Image>();
+                colorDot.sprite = colors[shuffledList[i]];                    
         }
     }
 }
