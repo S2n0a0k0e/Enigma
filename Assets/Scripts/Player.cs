@@ -137,7 +137,7 @@ public class Player : MonoBehaviour
             // Debug.Log(deltaY);
             mouseX1 /= 15;
             mouseY1 /= 15;
-             Debug.Log(mouseX1);
+            //  Debug.Log(mouseX1);
 
             if(mouseX1 < 0.1f && mouseX1 > 0f){
                 mouseX1 = 0.08f;
