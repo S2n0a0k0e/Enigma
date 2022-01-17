@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Oxyd : MonoBehaviour
 {
+    public Animator animator;
     Image spr;
     [SerializeField] Sprite sprit;
     void Start()
@@ -14,8 +15,17 @@ public class Oxyd : MonoBehaviour
 
     // Update is called once per frame
     void OnCollisionEnter2D(Collision2D col){
-        spr = GetComponent<Image>();
-        spr.sprite = sprit;
-        Debug.Log("Hi");
+
+            spr = GetComponent<Image>();
+            spr.sprite = sprit;
+        if(!animator.GetBool("isHit")){        
+            // Debug.Log("Hi");
+            animator.SetBool("isHit", true);            
+        }
+        else{
+            animator.SetBool("isHit", false);           
+        }
+
+        
     }
 }

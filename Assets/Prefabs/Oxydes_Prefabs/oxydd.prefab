@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bbd3b6878ebc3846878b1392deac5bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 162090259}
   sprit: {fileID: 854616689744723245, guid: 78a32f87d09983843970b793f62a1e33, type: 3}
 --- !u!50 &162090258
 Rigidbody2D:
