@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class Oxyd : MonoBehaviour
 {
+    [SerializeField] GameObject targetGameObject; 
     public Animator animator;
     Image spr;
     [SerializeField] Sprite sprit;
+
     void Start()
     {
         
     }
+
 
     // Update is called once per frame
     void OnCollisionEnter2D(Collision2D col){
@@ -20,10 +23,23 @@ public class Oxyd : MonoBehaviour
             spr.sprite = sprit;
         if(!animator.GetBool("isHit")){        
             // Debug.Log("Hi");
-            animator.SetBool("isHit", true);            
+            animator.SetBool("isHit", true);  
+            if(targetGameObject.GetComponent<GameSettings>().activeOxydes[0] >=0){
+                if(targetGameObject.GetComponent<GameSettings>().activeOxydes[1] >=0){
+                    Debug.Log("sfaffa");
+                }
+                else{
+                    targetGameObject.GetComponent<GameSettings>().activeOxydes[1] = targetGameObject.GetComponent<GameSettings>().activeOxydes[0];
+                }
+
+            }     
+            else{
+
+            }          
         }
         else{
-            animator.SetBool("isHit", false);           
+            animator.SetBool("isHit", false);      
+            
         }
 
         

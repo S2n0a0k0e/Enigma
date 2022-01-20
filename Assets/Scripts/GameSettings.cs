@@ -15,12 +15,17 @@ public class GameSettings : MonoBehaviour
     [SerializeField] GameObject[] oxydes;
 
     public Image colorDot;
+    public int[] activeOxydes;
+
     // Start is called before the first frame update
     void Start()
     {
         tableSize  = 2*oxydePairs;
         listOfAll = new int[tableSize];
         shuffledList= new int[tableSize];
+        activeOxydes = new int[2];
+        activeOxydes[0] = 0;
+        activeOxydes[1] = -1;
         shuffleOxydes();
         colorDots();    
     }
@@ -48,8 +53,10 @@ public class GameSettings : MonoBehaviour
 
     private void colorDots(){
         for(int i = 0; i < 2*oxydePairs; i++){  
-                colorDot = oxydes[i].GetComponent<Image>();
+                colorDot = oxydes[i].transform.GetChild(2).GetComponent<Image>();
                 colorDot.sprite = colors[shuffledList[i]];                    
         }
     }
+
+    
 }
