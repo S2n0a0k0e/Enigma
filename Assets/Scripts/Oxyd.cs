@@ -9,6 +9,7 @@ public class Oxyd : MonoBehaviour
     public Animator animator;
     Image spr;
     [SerializeField] Sprite sprit;
+    public GameObject parenti; 
 
     void Start()
     {
