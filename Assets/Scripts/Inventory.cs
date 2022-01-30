@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] GameObject[] items = new GameObject[10];
+
+    [SerializeField] GameObject additional;
     [SerializeField] GameObject[] inventoryPos = new GameObject[10];
     // [SerializeField] Sprite[] inventoryPos = new Sprite[10];
     public Sprite defaultSpr;
@@ -25,6 +27,7 @@ public class Inventory : MonoBehaviour
     void Update()
     {
         settingInventory();
+        nextItem();
     }
 
     public void settingInventory(){
@@ -51,4 +54,16 @@ public class Inventory : MonoBehaviour
         }
         items[0] = itemToInsert;
     }
+
+    public void nextItem(){
+        if (Input.GetKeyDown("space"))
+        {
+            additional = items[0];
+            for(int i = 0; i < count - 1; i++){
+                items[i] = items[i+1];
+            }
+            items[count - 1] = additional;
+        }
+    }
+    
 }
