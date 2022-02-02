@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
         // mouseY1 = Mathf.Log(mouseY1 + 1f);
         float velX = 0.0f;
         float velY = 0.0f;
-        float changeVelocity = 0.04f;
+        float changeVelocity = 0.035f;
         
         
         if(rb.velocity.x >= 0f){
