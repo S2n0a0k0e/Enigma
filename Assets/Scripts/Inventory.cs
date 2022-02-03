@@ -28,6 +28,7 @@ public class Inventory : MonoBehaviour
     {
         settingInventory();
         nextItem();
+        useItem();
     }
 
     public void settingInventory(){
@@ -63,6 +64,16 @@ public class Inventory : MonoBehaviour
                 items[i] = items[i+1];
             }
             items[count - 1] = additional;
+        }
+    }
+    public void useItem(){
+        if(Input.GetKeyDown("z"))
+        {
+            for(int i = 0; i < count - 1; i++){
+                items[i] = items[i+1];
+            }
+            items[count - 1].GetComponent<Image>().sprite = defaultSpr;
+            
         }
     }
     
