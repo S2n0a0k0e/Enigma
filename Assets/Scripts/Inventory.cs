@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour
 
     public Sprite spr;
 
-    public int count = 2;
+    public int count;
 
     void Start()
     {
@@ -26,9 +26,10 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        settingInventory();
         nextItem();
         useItem();
+        settingInventory();
+        
     }
 
     public void settingInventory(){
@@ -50,7 +51,7 @@ public class Inventory : MonoBehaviour
             count++;
         }
         
-        for(int i = count - 1; i >0; i--){
+        for(int i = count - 1; i > 0; i--){
             items[i] = items[i-1];  
         }
         items[0] = itemToInsert;
@@ -73,6 +74,9 @@ public class Inventory : MonoBehaviour
                 items[i] = items[i+1];
             }
             items[count - 1].GetComponent<Image>().sprite = defaultSpr;
+            inventoryPos[count - 1].GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+            count--;
+            
             
         }
     }
