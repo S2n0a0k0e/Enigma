@@ -73,7 +73,7 @@ public class Inventory : MonoBehaviour
             for(int i = 0; i < count - 1; i++){
                 items[i] = items[i+1];
             }
-            items[count - 1].GetComponent<Image>().sprite = defaultSpr;
+            inventoryPos[count - 1].GetComponent<Image>().sprite = defaultSpr;
             inventoryPos[count - 1].GetComponent<Image>().color = new Color32(0, 0, 0, 0);
             count--;
             
