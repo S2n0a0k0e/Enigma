@@ -17,6 +17,9 @@ public class Player : MonoBehaviour
     public float deltaY = 0f;
     public Rigidbody2D rb;
     private float range = 0.0f;
+
+    public int playerPosX;
+    public int playerPosY;
     
 
     // Start is called before the first frame update
@@ -24,6 +27,7 @@ public class Player : MonoBehaviour
     {
         MoveMouse ();
         VelocityChanger ();
+        getPlayerPos();
     }
 
     void MoveMouse () 
@@ -45,6 +49,12 @@ public class Player : MonoBehaviour
             rb.velocity = rb.velocity + new Vector2(0f, (mouseY1));
             
         }
+    }
+
+    void getPlayerPos()
+    {
+        playerPosX = (int) rb.position.x;
+        playerPosY = (int) rb.position.y;
     }
 
     void VelocityChanger ()
