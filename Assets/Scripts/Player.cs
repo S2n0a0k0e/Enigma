@@ -18,8 +18,8 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     private float range = 0.0f;
 
-    public int playerPosX;
-    public int playerPosY;
+    public float playerPosX;
+    public float playerPosY;
     
 
     // Start is called before the first frame update
@@ -53,8 +53,10 @@ public class Player : MonoBehaviour
 
     void getPlayerPos()
     {
-        playerPosX = (int) rb.position.x;
-        playerPosY = (int) rb.position.y;
+        playerPosX = (int) (rb.position.x+0.5);
+        playerPosY = (int) (rb.position.y+0.5);
+        // playerPosX += 0.5;
+        // playerPosY += 0.5;
     }
 
     void VelocityChanger ()

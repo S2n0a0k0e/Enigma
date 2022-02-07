@@ -2216,6 +2216,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  additional: {fileID: 0}
   inventoryPos:
   - {fileID: 122519019}
   - {fileID: 14892045}
@@ -2230,6 +2231,9 @@ MonoBehaviour:
   defaultSpr: {fileID: 21300000, guid: aa0ae5bf0e6fa1f4a8bda4cd223fd6f1, type: 3}
   spr: {fileID: 0}
   count: 2
+  playerScript: {fileID: 2135703782}
+  toShow: {fileID: 0}
+  parent: {fileID: 1889319173}
 --- !u!1001 &413573331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10298,6 +10302,8 @@ MonoBehaviour:
   mouseY2: 0
   deltaY: 0
   rb: {fileID: 2135703783}
+  playerPosX: 0
+  playerPosY: 0
 --- !u!50 &2135703783
 Rigidbody2D:
   serializedVersion: 4

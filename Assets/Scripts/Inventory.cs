@@ -16,8 +16,16 @@ public class Inventory : MonoBehaviour
 
     public int count;
 
+    public Player playerScript;
+    public GameObject toShow;
+    
+    public Transform parent;
+
+
     void Start()
     {
+        // playerScript = GameObject.Find("/PlayerLayer/Player").GetComponent<Player>();
+
         for(int i = count; i < 10; i++){
             inventoryPos[i].GetComponent<Image>().color = new Color32(0,0,0,0);
         }
@@ -70,6 +78,13 @@ public class Inventory : MonoBehaviour
     public void useItem(){
         if(Input.GetKeyDown("z"))
         {
+            // toShow = items[0];
+            toShow = Instantiate(items[0], new Vector3(playerScript.playerPosX,playerScript.playerPosY), Quaternion.identity, parent);
+
+            // toShow.transform.position = new Vector2(playerScript.playerPosX,playerScript.playerPosY);
+            // toShow.position.y = ;
+
+
             for(int i = 0; i < count - 1; i++){
                 items[i] = items[i+1];
             }
