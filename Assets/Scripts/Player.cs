@@ -53,10 +53,10 @@ public class Player : MonoBehaviour
 
     void getPlayerPos()
     {
-        playerPosX = (int) (rb.position.x+0.5);
-        playerPosY = (int) (rb.position.y+0.5);
-        // playerPosX += 0.5;
-        // playerPosY += 0.5;
+        int plPx = (int) (rb.position.x);
+        int plPy = (int) (rb.position.y);
+        playerPosX = (float) (plPx + 0.5);
+        playerPosY = (float) (plPy + 0.5);
     }
 
     void VelocityChanger ()

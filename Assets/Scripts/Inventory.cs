@@ -76,7 +76,7 @@ public class Inventory : MonoBehaviour
         }
     }
     public void useItem(){
-        if(Input.GetKeyDown("z"))
+        if(Input.GetKeyDown("z") && count >= 1)
         {
             // toShow = items[0];
             toShow = Instantiate(items[0], new Vector3(playerScript.playerPosX,playerScript.playerPosY), Quaternion.identity, parent);
