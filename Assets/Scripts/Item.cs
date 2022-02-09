@@ -8,6 +8,8 @@ public class Item : MonoBehaviour
 {
     public Inventory invScript;
     public Rigidbody2D rb;
+
+    public bool zPressed;
     
 
     void Start()
@@ -16,11 +18,25 @@ public class Item : MonoBehaviour
         
     }
 
+    void Update()
+    {
+        if(Input.GetKeyDown("z"))
+        {
+            zPressed = true;
+        }
+        if(Input.GetKeyUp("z"))
+        {
+            zPressed = false;
+        }
+    }
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D col){
-        invScript.fillInventory(gameObject);
-        transform.position = new Vector2(0,0);
+        if(!zPressed){
+            invScript.fillInventory(gameObject);
+            transform.position = new Vector2(0,0);
         // Destroy(gameObject);
         // gameObject.transform.position.x = -1000;
+        }
+        
     } 
 }
