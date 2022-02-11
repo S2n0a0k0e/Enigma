@@ -1094,8 +1094,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invScript: {fileID: 0}
+  itemLayerScript: {fileID: 0}
   rb: {fileID: 0}
   zPressed: 0
+  playerScript: {fileID: 0}
 --- !u!1 &122519019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3968,6 +3970,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7280285862079606855, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: invScript
+      value: 
+      objectReference: {fileID: 406179716}
+    - target: {fileID: 7280285862079606855, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: playerScript
+      value: 
+      objectReference: {fileID: 2135703782}
+    - target: {fileID: 7280285862079606855, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: itemLayerScript
+      value: 
+      objectReference: {fileID: 1889319174}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
 --- !u!224 &904816156 stripped
@@ -9568,8 +9582,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invScript: {fileID: 0}
+  itemLayerScript: {fileID: 0}
   rb: {fileID: 0}
   zPressed: 0
+  playerScript: {fileID: 0}
 --- !u!1001 &1958602186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10584,5 +10600,13 @@ PrefabInstance:
       propertyPath: invScript
       value: 
       objectReference: {fileID: 406179716}
+    - target: {fileID: 7280285862079606855, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: playerScript
+      value: 
+      objectReference: {fileID: 2135703782}
+    - target: {fileID: 7280285862079606855, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: itemLayerScript
+      value: 
+      objectReference: {fileID: 1889319174}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}

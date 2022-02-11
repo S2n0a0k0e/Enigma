@@ -78,11 +78,8 @@ public class Inventory : MonoBehaviour
     public void useItem(){
         if(Input.GetKeyDown("z") && count >= 1)
         {
-            // toShow = items[0];
+            
             toShow = Instantiate(items[0], new Vector3(playerScript.playerPosX,playerScript.playerPosY), Quaternion.identity, parent);
-
-            // toShow.transform.position = new Vector2(playerScript.playerPosX,playerScript.playerPosY);
-            // toShow.position.y = ;
 
 
             for(int i = 0; i < count - 1; i++){
