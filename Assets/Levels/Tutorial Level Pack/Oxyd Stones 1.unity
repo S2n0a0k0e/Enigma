@@ -1093,11 +1093,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d562fff0e20a542beae2e26acb43c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invScript: {fileID: 0}
-  itemLayerScript: {fileID: 0}
+  invScript: {fileID: 406179716}
+  itemLayerScript: {fileID: 1889319174}
   rb: {fileID: 0}
   zPressed: 0
-  playerScript: {fileID: 0}
+  playerScript: {fileID: 2135703782}
 --- !u!1 &122519019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,6 +2291,7 @@ MonoBehaviour:
   playerScript: {fileID: 2135703782}
   toShow: {fileID: 0}
   parent: {fileID: 1889319173}
+  itemLayerScript: {fileID: 0}
 --- !u!1001 &413573331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9581,11 +9582,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d562fff0e20a542beae2e26acb43c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invScript: {fileID: 0}
-  itemLayerScript: {fileID: 0}
+  invScript: {fileID: 406179716}
+  itemLayerScript: {fileID: 1889319174}
   rb: {fileID: 0}
   zPressed: 0
-  playerScript: {fileID: 0}
+  playerScript: {fileID: 2135703782}
 --- !u!1001 &1958602186
 PrefabInstance:
   m_ObjectHideFlags: 0

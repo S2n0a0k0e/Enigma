@@ -21,9 +21,12 @@ public class Inventory : MonoBehaviour
     
     public Transform parent;
 
+    public ItemLayer itemLayerScript;
+
 
     void Start()
     {
+        itemLayerScript = GameObject.Find("/MainPlayground/ItemLayer").GetComponent<ItemLayer>();
         // playerScript = GameObject.Find("/PlayerLayer/Player").GetComponent<Player>();
 
         for(int i = count; i < 10; i++){
@@ -76,19 +79,24 @@ public class Inventory : MonoBehaviour
         }
     }
     public void useItem(){
+        
         if(Input.GetKeyDown("z") && count >= 1)
         {
-            
-            toShow = Instantiate(items[0], new Vector3(playerScript.playerPosX,playerScript.playerPosY), Quaternion.identity, parent);
+            int pickedItemPosX = (int) (playerScript.playerPosX - 0.5f);
+            int pickedItemPosY = (int) (playerScript.playerPosY - 0.5f);
+
+            if(itemLayerScript.columns[pickedItemPosX].rows[pickedItemPosY] == false){
+                toShow = Instantiate(items[0], new Vector3(playerScript.playerPosX,playerScript.playerPosY), Quaternion.identity, parent);
 
 
-            for(int i = 0; i < count - 1; i++){
-                items[i] = items[i+1];
-            }
-            inventoryPos[count - 1].GetComponent<Image>().sprite = defaultSpr;
-            inventoryPos[count - 1].GetComponent<Image>().color = new Color32(0, 0, 0, 0);
-            count--;
-            
+                for(int i = 0; i < count - 1; i++){
+                    items[i] = items[i+1];
+                }
+                inventoryPos[count - 1].GetComponent<Image>().sprite = defaultSpr;
+                inventoryPos[count - 1].GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                count--;
+                itemLayerScript.columns[pickedItemPosX].rows[pickedItemPosY] = true;
+            }      
             
         }
     }
