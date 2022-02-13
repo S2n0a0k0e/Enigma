@@ -10,40 +10,33 @@ public class Item : MonoBehaviour
     public ItemLayer itemLayerScript;
     public Rigidbody2D rb;
 
-    public bool zPressed;
+    
 
     public Player playerScript;
+    public GameSettings gameSettingsScript;
     
 
     void Start()
     {
         invScript = GameObject.Find("/Inventory/Inventory").GetComponent<Inventory>();
         itemLayerScript = GameObject.Find("/MainPlayground/ItemLayer").GetComponent<ItemLayer>();
+        gameSettingsScript = GameObject.Find("LevelSettings").GetComponent<GameSettings>();
         
     }
 
     void Update()
     {
-        if(Input.GetKeyDown("z"))
-        {
-            zPressed = true;
-        }
-        if(Input.GetKeyUp("z"))
-        {
-            zPressed = false;
-        }
+        
     }
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D col){
-        if(!zPressed){
+        
+        if(!gameSettingsScript.zPressed){
             int pickedItemPosX = (int) (playerScript.playerPosX - 0.5f);
             int pickedItemPosY = (int) (playerScript.playerPosY - 0.5f);
-            Debug.Log(pickedItemPosX);
-            Debug.Log(pickedItemPosY);
-
 
             invScript.fillInventory(gameObject);
-            transform.position = new Vector2(0,0);
+            // transform.position = new Vector2(0,0);
             itemLayerScript.columns[pickedItemPosX].rows[pickedItemPosY] = false;
         }
         

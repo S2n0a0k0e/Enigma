@@ -17,6 +17,8 @@ public class GameSettings : MonoBehaviour
     public Image colorDot;
     public int[] activeOxydes;
 
+    public bool zPressed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +35,14 @@ public class GameSettings : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown("z"))
+        {
+            zPressed = true;
+        }
+        if(Input.GetKeyUp("z"))
+        {
+            zPressed = false;
+        }
     }
 
     private void shuffleOxydes(){

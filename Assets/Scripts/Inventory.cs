@@ -65,7 +65,11 @@ public class Inventory : MonoBehaviour
         for(int i = count - 1; i > 0; i--){
             items[i] = items[i-1];  
         }
-        items[0] = itemToInsert;
+        // items[0] = itemToInsert;
+        items[0] = Instantiate(itemToInsert, new Vector3(0,0), Quaternion.identity, parent);
+        Destroy(itemToInsert);
+
+         
     }
 
     public void nextItem(){
@@ -78,6 +82,7 @@ public class Inventory : MonoBehaviour
             items[count - 1] = additional;
         }
     }
+    
     public void useItem(){
         
         if(Input.GetKeyDown("z") && count >= 1)
@@ -87,6 +92,7 @@ public class Inventory : MonoBehaviour
 
             if(itemLayerScript.columns[pickedItemPosX].rows[pickedItemPosY] == false){
                 toShow = Instantiate(items[0], new Vector3(playerScript.playerPosX,playerScript.playerPosY), Quaternion.identity, parent);
+                Destroy(items[0]);
 
 
                 for(int i = 0; i < count - 1; i++){
