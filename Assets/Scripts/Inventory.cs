@@ -23,15 +23,18 @@ public class Inventory : MonoBehaviour
 
     public ItemLayer itemLayerScript;
 
+    private AudioSource pickUpSource;
+
 
     void Start()
     {
         itemLayerScript = GameObject.Find("/MainPlayground/ItemLayer").GetComponent<ItemLayer>();
-        // playerScript = GameObject.Find("/PlayerLayer/Player").GetComponent<Player>();
 
         for(int i = count; i < 10; i++){
             inventoryPos[i].GetComponent<Image>().color = new Color32(0,0,0,0);
         }
+
+        pickUpSource = GameObject.Find("PickUpSound").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -68,6 +71,7 @@ public class Inventory : MonoBehaviour
         // items[0] = itemToInsert;
         items[0] = Instantiate(itemToInsert, new Vector3(0,0), Quaternion.identity, parent);
         Destroy(itemToInsert);
+        pickUpSource.Play();
 
          
     }
