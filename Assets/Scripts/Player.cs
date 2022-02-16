@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {   
@@ -20,9 +21,15 @@ public class Player : MonoBehaviour
 
     public float playerPosX;
     public float playerPosY;
+
+    private AudioSource hitStoneSource;
+
     
 
-    // Start is called before the first frame update
+    // void Start()
+    // {
+        
+    // }
     void Update ()
     {
         MoveMouse ();
@@ -61,8 +68,6 @@ public class Player : MonoBehaviour
 
     void VelocityChanger ()
     {
-        // mouseX1 = Mathf.Log(mouseX1 + 1f);
-        // mouseY1 = Mathf.Log(mouseY1 + 1f);
         float velX = 0.0f;
         float velY = 0.0f;
         float changeVelocity = 0.035f;
@@ -118,7 +123,6 @@ public class Player : MonoBehaviour
             }
         }
         
-        // Debug.Log(rb.velocity.x);
         
     }
     
@@ -129,10 +133,7 @@ public class Player : MonoBehaviour
             Event e = Event.current;
             mouseX1 = Input.GetAxis("Mouse X");
             mouseY1 = Input.GetAxis("Mouse Y");
-            // Debug.Log(mouseX1);
-            // deltaY = mouseY1 - mouseY2;
-            // deltaX = mouseX1 - mouseX2;
-            // Debug.Log(deltaX);
+
             if(mouseX1 < 0){
                 mouseX1 *= -1;
             }
@@ -146,10 +147,8 @@ public class Player : MonoBehaviour
                 mouseY1 = Mathf.Log(mouseY1 * 300f);
             }
              
-            // Debug.Log(deltaY);
             mouseX1 /= 15;
             mouseY1 /= 15;
-            //  Debug.Log(mouseX1);
 
             if(mouseX1 < 0.1f && mouseX1 > 0f){
                 mouseX1 = 0.08f;
@@ -158,20 +157,21 @@ public class Player : MonoBehaviour
                 mouseY1 = 0.08f;
             }
 
-            
-            // Debug.Log(deltaX);
-            // Debug.Log(deltaY);
             range = 0.0f;
         }   
             
     }
     
-    void OnTriggerEnter2D (Collider2D col)
+    void OnCollisionEnter2D (Collision2D col)
     {
-        if (col.tag == "UnmovableBlock")
+        if (col.gameObject.tag == "UnmovableBlock")
         {
-        
-        return;
+            hitStoneSource = GameObject.Find("HitStoneSound").GetComponent<AudioSource>();
+            hitStoneSource.Play();
+        }
+        else if(col.gameObject.tag == "Oxydd")
+        {
+            
         }
     }
 

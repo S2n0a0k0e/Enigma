@@ -106,6 +106,8 @@ public class Inventory : MonoBehaviour
                 inventoryPos[count - 1].GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                 count--;
                 itemLayerScript.columns[pickedItemPosX].rows[pickedItemPosY] = true;
+                pickUpSource.Play();
+
             }      
             
         }
