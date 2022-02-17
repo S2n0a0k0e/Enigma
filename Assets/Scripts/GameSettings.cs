@@ -15,7 +15,7 @@ public class GameSettings : MonoBehaviour
     [SerializeField] GameObject[] oxydes;
 
     public Image colorDot;
-    public int[] activeOxydes;
+    public GameObject activeOxydes;
 
     public bool zPressed;
 
@@ -25,9 +25,7 @@ public class GameSettings : MonoBehaviour
         tableSize  = 2*oxydePairs;
         listOfAll = new int[tableSize];
         shuffledList= new int[tableSize];
-        activeOxydes = new int[2];
-        activeOxydes[0] = 0;
-        activeOxydes[1] = -1;
+        activeOxydes = null;
         shuffleOxydes();
         colorDots();    
     }
@@ -66,6 +64,11 @@ public class GameSettings : MonoBehaviour
                 colorDot.sprite = colors[shuffledList[i]];                    
         }
     }
+
+    public void activationOfOxydes(GameObject oxyde, GameObject position){
+        position = oxyde;
+    }
+
 
     
 }
