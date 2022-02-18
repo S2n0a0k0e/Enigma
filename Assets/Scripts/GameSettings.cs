@@ -16,6 +16,7 @@ public class GameSettings : MonoBehaviour
 
     public Image colorDot;
     public GameObject activeOxydes;
+    public int toWin;
 
     public bool zPressed;
 
@@ -26,6 +27,7 @@ public class GameSettings : MonoBehaviour
         listOfAll = new int[tableSize];
         shuffledList= new int[tableSize];
         activeOxydes = null;
+        toWin = oxydePairs;
         shuffleOxydes();
         colorDots();    
     }

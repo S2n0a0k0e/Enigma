@@ -14210,7 +14210,8 @@ MonoBehaviour:
   - {fileID: 1294911676}
   - {fileID: 1396095153}
   colorDot: {fileID: 0}
-  activeOxydes: 
+  activeOxydes: {fileID: 0}
+  toWin: 0
   zPressed: 0
 --- !u!4 &1862117063
 Transform:
@@ -15139,10 +15140,6 @@ PrefabInstance:
     - target: {fileID: 6083549415517630213, guid: a8b9cc42749116549a53959ed7895990, type: 3}
       propertyPath: m_Name
       value: oxydd
-      objectReference: {fileID: 0}
-    - target: {fileID: 6083549415517630213, guid: a8b9cc42749116549a53959ed7895990, type: 3}
-      propertyPath: m_TagString
-      value: Oxydd
       objectReference: {fileID: 0}
     - target: {fileID: 8206305381694133521, guid: a8b9cc42749116549a53959ed7895990, type: 3}
       propertyPath: targetGameObject

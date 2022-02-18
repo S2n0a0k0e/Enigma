@@ -28,6 +28,12 @@ public class Oxyd : MonoBehaviour
                     targetGameObject.GetComponent<GameSettings>().activeOxydes = this.transform.parent.gameObject;
                     activeOxyd.transform.GetChild(4).gameObject.GetComponent<Oxyd>().animator.SetBool("isHit", false);
                 }
+                else{
+                    activeOxyd.transform.GetChild(3).gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+                    this.transform.parent.gameObject.transform.GetChild(3).gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+                    targetGameObject.GetComponent<GameSettings>().activeOxydes = null;
+                    targetGameObject.GetComponent<GameSettings>().toWin --;
+                }
             }          
         }
         else{     
