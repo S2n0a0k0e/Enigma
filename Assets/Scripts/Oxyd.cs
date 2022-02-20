@@ -8,8 +8,16 @@ public class Oxyd : MonoBehaviour
     [SerializeField] GameObject targetGameObject; 
     public Animator animator;
     Image spr;
-    [SerializeField] Sprite sprit;   
+    [SerializeField] Sprite sprit; 
+    private AudioSource oxydHitSource;
+    private AudioSource oxydPairSource;
+  
 
+    void Start() 
+    {
+        oxydHitSource = GameObject.Find("OxydHitSound").GetComponent<AudioSource>();
+        oxydPairSource = GameObject.Find("OxydPairSound").GetComponent<AudioSource>();
+    }
 
     void OnCollisionEnter2D(Collision2D col){
             var activeOxyd = targetGameObject.GetComponent<GameSettings>().activeOxydes;
@@ -18,6 +26,7 @@ public class Oxyd : MonoBehaviour
             spr.sprite = sprit;
         if(!animator.GetBool("isHit")){ 
             animator.SetBool("isHit", true);  
+            oxydHitSource.Play();
             if(activeOxyd == null){
                 targetGameObject.GetComponent<GameSettings>().activeOxydes = this.transform.parent.gameObject;
                 Debug.Log("adlslanl");
@@ -33,6 +42,7 @@ public class Oxyd : MonoBehaviour
                     this.transform.parent.gameObject.transform.GetChild(3).gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
                     targetGameObject.GetComponent<GameSettings>().activeOxydes = null;
                     targetGameObject.GetComponent<GameSettings>().toWin --;
+                    oxydPairSource.Play();
                 }
             }          
         }
