@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +15,7 @@ public class GameSettings : MonoBehaviour
     [SerializeField] Sprite[] colors;
 
     [SerializeField] GameObject[] oxydes;
+ 
 
     public Image colorDot;
     public GameObject activeOxydes;
@@ -43,6 +46,7 @@ public class GameSettings : MonoBehaviour
         {
             zPressed = false;
         }
+        WinLevel();
     }
 
     private void shuffleOxydes(){
@@ -71,6 +75,18 @@ public class GameSettings : MonoBehaviour
         position = oxyde;
     }
 
+    IEnumerator NextLevel()
+    {
+        yield return new  WaitForSeconds(3);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
+    public void WinLevel()
+    {
+        if(toWin == 0)
+        {
+            StartCoroutine(NextLevel());
+        }
+    }
     
 }
