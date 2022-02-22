@@ -195,6 +195,7 @@ MonoBehaviour:
   targetGameObject: {fileID: 0}
   animator: {fileID: 162090259}
   sprit: {fileID: 854616689744723245, guid: 78a32f87d09983843970b793f62a1e33, type: 3}
+  questionMark: {fileID: 0}
 --- !u!50 &162090258
 Rigidbody2D:
   serializedVersion: 4

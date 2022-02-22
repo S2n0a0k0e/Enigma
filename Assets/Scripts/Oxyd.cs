@@ -11,6 +11,9 @@ public class Oxyd : MonoBehaviour
     [SerializeField] Sprite sprit; 
     private AudioSource oxydHitSource;
     private AudioSource oxydPairSource;
+    private GameObject questionMarkObject;
+
+    public GameObject questionMark;
   
 
     void Start() 
@@ -29,6 +32,9 @@ public class Oxyd : MonoBehaviour
             oxydHitSource.Play();
             if(activeOxyd == null){
                 targetGameObject.GetComponent<GameSettings>().activeOxydes = this.transform.parent.gameObject;
+                questionMarkObject = Instantiate(questionMark,
+                    new Vector3(this.transform.parent.gameObject.transform.position.x,this.transform.parent.gameObject.transform.position.y), 
+                    Quaternion.identity, this.transform.parent);
                 Debug.Log("adlslanl");
             }     
             else{
@@ -36,10 +42,15 @@ public class Oxyd : MonoBehaviour
                     != activeOxyd.transform.GetChild(2).gameObject.GetComponent<Image>().sprite){
                     targetGameObject.GetComponent<GameSettings>().activeOxydes = this.transform.parent.gameObject;
                     activeOxyd.transform.GetChild(4).gameObject.GetComponent<Oxyd>().animator.SetBool("isHit", false);
+                    Destroy(activeOxyd.transform.GetChild(5).gameObject);
+                    questionMarkObject = Instantiate(questionMark,
+                     new Vector3(this.transform.parent.gameObject.transform.position.x,this.transform.parent.gameObject.transform.position.y), 
+                     Quaternion.identity, this.transform.parent);
                 }
                 else{
                     activeOxyd.transform.GetChild(3).gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
                     this.transform.parent.gameObject.transform.GetChild(3).gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+                    Destroy(activeOxyd.transform.GetChild(5).gameObject);
                     targetGameObject.GetComponent<GameSettings>().activeOxydes = null;
                     targetGameObject.GetComponent<GameSettings>().toWin --;
                     oxydPairSource.Play();
