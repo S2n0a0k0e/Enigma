@@ -96,6 +96,7 @@ public class Inventory : MonoBehaviour
 
             if(itemLayerScript.columns[pickedItemPosX].rows[pickedItemPosY] == false){
                 toShow = Instantiate(items[0], new Vector3(playerScript.playerPosX,playerScript.playerPosY), Quaternion.identity, parent);
+                toShow.GetComponent<Item>().UseItem();
                 Destroy(items[0]);
 
 

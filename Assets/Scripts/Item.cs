@@ -41,4 +41,13 @@ public class Item : MonoBehaviour
         }
         
     } 
+
+    public void UseItem()
+    {
+        if(gameObject.tag == "Document")
+        {
+            this.gameObject.transform.GetChild(0).gameObject.GetComponent<DocumentItem>().ActiveDocument();
+            Destroy(this.gameObject);
+        }
+    }
 }

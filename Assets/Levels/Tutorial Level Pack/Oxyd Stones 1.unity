@@ -9418,6 +9418,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1889319173}
     m_Modifications:
+    - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: m_Text
+      value: ' Hello! How are you?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7280285862079606849, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_Name
       value: Document2
@@ -17029,6 +17041,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1889319173}
     m_Modifications:
+    - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: m_Text
+      value: " Hello! How are you?\n I'm glad you came!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7280285862079606849, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_Name
       value: Document1
@@ -17129,5 +17153,17 @@ PrefabInstance:
       propertyPath: itemLayerScript
       value: 
       objectReference: {fileID: 1889319174}
+    - target: {fileID: 7280285862079606907, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280285862079606907, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280285862079606907, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}

@@ -11,13 +11,18 @@
      string[] lines;
      TextMeshProUGUI textComp;
  
-     // Use this for initialization
+     bool isVisible = false;
+
+     Image parentImage;
      void Start () {
          textComp = GetComponent<TextMeshProUGUI>();
-         message = textComp.text;
-         lines = message.Split('\n');
-         textComp.text = "";
-         StartCoroutine(TypeText ());
+         textComp.text = "";    
+         parentImage = this.transform.parent.gameObject.GetComponent<Image>();
+     }
+
+     void Update()
+     {
+         SetVisibility();
      }
  
      IEnumerator TypeText () {
@@ -29,6 +34,27 @@
          }
          yield return new WaitForSeconds(1);
          textComp.text = "";
+         }
+         isVisible = false;
+     }
+
+     public void TypeDocumentText (string textToWrite)
+     {
+         isVisible = true;
+         lines = textToWrite.Split('\n');
+         textComp.text = "";
+         StartCoroutine(TypeText());
+     }
+
+     public void SetVisibility()
+     {
+         if(isVisible)
+         {
+             parentImage.color = new Color32(0,0,0,255); 
+         }
+         else 
+         {
+             parentImage.color = new Color32(255,255,255,0); 
          }
      }
  }
