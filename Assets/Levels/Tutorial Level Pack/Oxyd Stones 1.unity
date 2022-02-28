@@ -3002,7 +3002,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.9080563, b: 0.5226415, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -3751,7 +3751,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -16963,6 +16963,9 @@ MonoBehaviour:
   rb: {fileID: 2135703783}
   playerPosX: 0
   playerPosY: 0
+  particleEffect: {fileID: 0}
+  effect: {fileID: 0}
+  effectParent: {fileID: 0}
 --- !u!50 &2135703783
 Rigidbody2D:
   serializedVersion: 4
