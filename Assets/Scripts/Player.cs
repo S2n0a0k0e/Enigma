@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
 
     public GameObject particleEffect;
     public GameObject effect;
+
     public Transform effectParent;
 
     
@@ -173,7 +174,7 @@ public class Player : MonoBehaviour
             hitStoneSource = GameObject.Find("HitStoneSound").GetComponent<AudioSource>();
             hitStoneSource.Play();
             effect = Instantiate(particleEffect, new Vector3(this.gameObject.transform.position.x,
-                this.gameObject.transform.position.y,-10), Quaternion.identity, this.transform.parent);
+                this.gameObject.transform.position.y,-30), Quaternion.identity, particleEffect.transform.parent);
         }
         else if(col.gameObject.tag == "Oxydd")
         {
