@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     private AudioSource hitStoneSource;
 
     public GameObject particleEffect;
-    public GameObject effect;
+    // public GameObject effect;
 
     public Transform effectParent;
 
@@ -183,6 +183,7 @@ public class Player : MonoBehaviour
 
     IEnumerator HitEffect(Collision2D col)
     {
+        GameObject effect;
         effect = Instantiate(particleEffect, new Vector3(col.contacts[0].point.x,
                 col.contacts[0].point.y,-30), Quaternion.identity, particleEffect.transform.parent);
         yield return new WaitForSeconds(1);
