@@ -173,13 +173,20 @@ public class Player : MonoBehaviour
         {
             hitStoneSource = GameObject.Find("HitStoneSound").GetComponent<AudioSource>();
             hitStoneSource.Play();
-            effect = Instantiate(particleEffect, new Vector3(this.gameObject.transform.position.x,
-                this.gameObject.transform.position.y,-30), Quaternion.identity, particleEffect.transform.parent);
+            StartCoroutine(HitEffect(col));
         }
         else if(col.gameObject.tag == "Oxydd")
         {
             
         }
+    }
+
+    IEnumerator HitEffect(Collision2D col)
+    {
+        effect = Instantiate(particleEffect, new Vector3(col.contacts[0].point.x,
+                col.contacts[0].point.y,-30), Quaternion.identity, particleEffect.transform.parent);
+        yield return new WaitForSeconds(1);
+        Destroy(effect);
     }
 
     
