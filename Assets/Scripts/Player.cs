@@ -92,14 +92,6 @@ public class Player : MonoBehaviour
         }
         
         if(velX > velY){
-            if(rb.velocity.x > 0f) 
-            {
-                rb.velocity = rb.velocity + new Vector2(-changeVelocity, 0f);
-            }
-            if(rb.velocity.x < 0f) 
-            {
-                rb.velocity = rb.velocity + new Vector2(changeVelocity, 0f);
-            }
             if(rb.velocity.y > 0f) 
             {
                 rb.velocity *= new Vector2(1f, ((velX - changeVelocity)/velX));
@@ -108,6 +100,15 @@ public class Player : MonoBehaviour
             {
                 rb.velocity *= new Vector2(1f, ((velX - changeVelocity)/velX));
             }
+            if(rb.velocity.x > 0f) 
+            {
+                rb.velocity = rb.velocity + new Vector2(-changeVelocity, 0f);
+            }
+            if(rb.velocity.x < 0f) 
+            {
+                rb.velocity = rb.velocity + new Vector2(changeVelocity, 0f);
+            }
+            
         }
         else {
             if(rb.velocity.x > 0f) 
