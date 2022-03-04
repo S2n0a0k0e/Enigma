@@ -16964,7 +16964,6 @@ MonoBehaviour:
   playerPosX: 0
   playerPosY: 0
   particleEffect: {fileID: 0}
-  effect: {fileID: 0}
   effectParent: {fileID: 0}
 --- !u!50 &2135703783
 Rigidbody2D:

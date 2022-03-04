@@ -14,12 +14,17 @@ public class Oxyd : MonoBehaviour
     private GameObject questionMarkObject;
 
     public GameObject questionMark;
+
+    public Image shadow;
+    public Sprite shadowIm1;
+    public Sprite shadowIm2;
   
 
     void Start() 
     {
         oxydHitSource = GameObject.Find("OxydHitSound").GetComponent<AudioSource>();
         oxydPairSource = GameObject.Find("OxydPairSound").GetComponent<AudioSource>();
+        shadow = this.transform.parent.gameObject.transform.GetChild(0).gameObject.GetComponent<Image>();
     }
 
     void OnCollisionEnter2D(Collision2D col){
@@ -66,9 +71,11 @@ public class Oxyd : MonoBehaviour
 
     public void ena(){
         spr.color = new Color32(255,255,255,0);
+        shadow.sprite = shadowIm2;
     }
 
     public void abl(){
         spr.color = new Color32(255,255,255,255);
+        shadow.sprite = shadowIm1;
     }
 }

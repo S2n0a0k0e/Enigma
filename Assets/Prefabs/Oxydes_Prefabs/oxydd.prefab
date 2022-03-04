@@ -196,6 +196,9 @@ MonoBehaviour:
   animator: {fileID: 162090259}
   sprit: {fileID: 854616689744723245, guid: 78a32f87d09983843970b793f62a1e33, type: 3}
   questionMark: {fileID: 0}
+  shadow: {fileID: 0}
+  shadowIm1: {fileID: 21300000, guid: 7871b051c3323ce42a36cd510fd19ad0, type: 3}
+  shadowIm2: {fileID: 21300000, guid: d35d4059bd11f4048929e59ea0c3d076, type: 3}
 --- !u!50 &162090258
 Rigidbody2D:
   serializedVersion: 4
