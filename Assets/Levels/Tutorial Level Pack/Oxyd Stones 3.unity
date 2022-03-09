@@ -16454,7 +16454,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_Text
-      value: " Hello! How are you?\n I'm glad you came!"
+      value: 'If we can''t see something it
+
+        means that it doesn''t exist?'
       objectReference: {fileID: 0}
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_FontData.m_MinSize
