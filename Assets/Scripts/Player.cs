@@ -176,9 +176,9 @@ public class Player : MonoBehaviour
             hitStoneSource.Play();
             StartCoroutine(HitEffect(col));
         }
-        else if(col.gameObject.tag == "Oxydd")
+        else if(col.gameObject.tag == "Player")
         {
-            
+            StartCoroutine(HitEffect(col));
         }
     }
 
