@@ -47,6 +47,7 @@ public class Item : MonoBehaviour
         if(gameObject.tag == "Document")
         {
             this.gameObject.transform.GetChild(0).gameObject.GetComponent<DocumentItem>().ActiveDocument();
+            itemLayerScript.columns[(int)(playerScript.playerPosX - 0.5f)].rows[(int)(playerScript.playerPosY - 0.5f)] = false;
             Destroy(this.gameObject);
         }
     }
