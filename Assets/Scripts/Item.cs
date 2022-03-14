@@ -14,6 +14,8 @@ public class Item : MonoBehaviour
 
     public Player playerScript;
     public GameSettings gameSettingsScript;
+
+    public Player mainPlayer;
     
 
     void Start()
@@ -32,6 +34,7 @@ public class Item : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col){
         
         if(!gameSettingsScript.zPressed){
+            playerScript = col.gameObject.GetComponent<Player>();
             int pickedItemPosX = (int) (playerScript.playerPosX - 0.5f);
             int pickedItemPosY = (int) (playerScript.playerPosY - 0.5f);
 
@@ -47,7 +50,7 @@ public class Item : MonoBehaviour
         if(gameObject.tag == "Document")
         {
             this.gameObject.transform.GetChild(0).gameObject.GetComponent<DocumentItem>().ActiveDocument();
-            itemLayerScript.columns[(int)(playerScript.playerPosX - 0.5f)].rows[(int)(playerScript.playerPosY - 0.5f)] = false;
+            itemLayerScript.columns[(int)(mainPlayer.playerPosX - 0.5f)].rows[(int)(mainPlayer.playerPosY - 0.5f)] = false;
             Destroy(this.gameObject);
         }
     }

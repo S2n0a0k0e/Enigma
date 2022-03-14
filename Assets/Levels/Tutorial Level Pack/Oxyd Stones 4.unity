@@ -1213,6 +1213,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   playerScript: {fileID: 367216871}
   gameSettingsScript: {fileID: 0}
+  mainPlayer: {fileID: 2135703782}
 --- !u!1 &122519019
 GameObject:
   m_ObjectHideFlags: 0
@@ -12349,6 +12350,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 406179716}
     - target: {fileID: 7280285862079606855, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: mainPlayer
+      value: 
+      objectReference: {fileID: 2135703782}
+    - target: {fileID: 7280285862079606855, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 367216871}
@@ -15272,14 +15277,14 @@ MonoBehaviour:
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
-  - rows: 000000000000000100000000000000
-  - rows: 000000000000000000000000000000
-  - rows: 000000000001000000000000000000
-  - rows: 000000000000000000000000000000
-  - rows: 000000000000000000000000000000
   - rows: 000000000001000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000100000000000000
+  - rows: 000000000000000000000000000000
+  - rows: 000000000000000000000000000000
+  - rows: 000000000000000100000000000000
+  - rows: 000000000000000000000000000000
+  - rows: 000000000001000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
@@ -15629,6 +15634,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   playerScript: {fileID: 367216871}
   gameSettingsScript: {fileID: 0}
+  mainPlayer: {fileID: 2135703782}
 --- !u!1001 &1927941663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17015,9 +17021,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 406179716}
     - target: {fileID: 7280285862079606855, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: mainPlayer
+      value: 
+      objectReference: {fileID: 2135703782}
+    - target: {fileID: 7280285862079606855, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: playerScript
       value: 
-      objectReference: {fileID: 367216871}
+      objectReference: {fileID: 2135703782}
     - target: {fileID: 7280285862079606855, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: itemLayerScript
       value: 
