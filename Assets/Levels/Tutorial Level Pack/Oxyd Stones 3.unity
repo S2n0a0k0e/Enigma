@@ -1121,6 +1121,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   playerScript: {fileID: 2135703782}
   gameSettingsScript: {fileID: 0}
+  mainPlayer: {fileID: 0}
 --- !u!1 &122519019
 GameObject:
   m_ObjectHideFlags: 0
@@ -14898,7 +14899,7 @@ MonoBehaviour:
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
-  - rows: 000000000001000000000000000000
+  - rows: 000000000000000100000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
@@ -15254,6 +15255,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   playerScript: {fileID: 2135703782}
   gameSettingsScript: {fileID: 0}
+  mainPlayer: {fileID: 0}
 --- !u!1001 &1958602186
 PrefabInstance:
   m_ObjectHideFlags: 0
