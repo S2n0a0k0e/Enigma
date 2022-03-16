@@ -24,6 +24,7 @@ public class Inventory : MonoBehaviour
     public ItemLayer itemLayerScript;
 
     private AudioSource pickUpSource;
+    public Player mainPlayer;
 
 
     void Start()
@@ -91,11 +92,11 @@ public class Inventory : MonoBehaviour
         
         if(Input.GetKeyDown("z") && count >= 1)
         {
-            int pickedItemPosX = (int) (playerScript.playerPosX - 0.5f);
-            int pickedItemPosY = (int) (playerScript.playerPosY - 0.5f);
+            int pickedItemPosX = (int) (mainPlayer.playerPosX - 0.5f);
+            int pickedItemPosY = (int) (mainPlayer.playerPosY - 0.5f);
 
             if(itemLayerScript.columns[pickedItemPosX].rows[pickedItemPosY] == false){
-                toShow = Instantiate(items[0], new Vector3(playerScript.playerPosX,playerScript.playerPosY), Quaternion.identity, parent);
+                toShow = Instantiate(items[0], new Vector3(mainPlayer.playerPosX,mainPlayer.playerPosY), Quaternion.identity, parent);
                 itemLayerScript.columns[pickedItemPosX].rows[pickedItemPosY] = true;
                 toShow.GetComponent<Item>().UseItem();
                 Destroy(items[0]);

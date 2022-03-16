@@ -23,6 +23,7 @@ public class Item : MonoBehaviour
         invScript = GameObject.Find("/Inventory/Inventory").GetComponent<Inventory>();
         itemLayerScript = GameObject.Find("/MainPlayground/ItemLayer").GetComponent<ItemLayer>();
         gameSettingsScript = GameObject.Find("LevelSettings").GetComponent<GameSettings>();
+        mainPlayer = GameObject.Find("PlayerLayer/Player").GetComponent<Player>();
         
     }
 
@@ -52,6 +53,7 @@ public class Item : MonoBehaviour
             this.gameObject.transform.GetChild(0).gameObject.GetComponent<DocumentItem>().ActiveDocument();
             itemLayerScript.columns[(int)(mainPlayer.playerPosX - 0.5f)].rows[(int)(mainPlayer.playerPosY - 0.5f)] = false;
             Destroy(this.gameObject);
+            Debug.Log("Destroyed");
         }
     }
 }

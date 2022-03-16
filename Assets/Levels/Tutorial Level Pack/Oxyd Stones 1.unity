@@ -1225,6 +1225,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   playerScript: {fileID: 2135703782}
   gameSettingsScript: {fileID: 0}
+  mainPlayer: {fileID: 0}
 --- !u!1 &122519019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,6 +2606,7 @@ MonoBehaviour:
   toShow: {fileID: 0}
   parent: {fileID: 1889319173}
   itemLayerScript: {fileID: 0}
+  mainPlayer: {fileID: 2135703782}
 --- !u!1001 &413573331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15946,6 +15948,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   playerScript: {fileID: 2135703782}
   gameSettingsScript: {fileID: 0}
+  mainPlayer: {fileID: 0}
 --- !u!1001 &1958602186
 PrefabInstance:
   m_ObjectHideFlags: 0

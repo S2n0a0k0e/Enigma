@@ -2981,6 +2981,7 @@ MonoBehaviour:
   toShow: {fileID: 0}
   parent: {fileID: 1889319173}
   itemLayerScript: {fileID: 0}
+  mainPlayer: {fileID: 2135703782}
 --- !u!1001 &413573331
 PrefabInstance:
   m_ObjectHideFlags: 0
