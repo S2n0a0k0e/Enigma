@@ -20,6 +20,7 @@ public class GameSettings : MonoBehaviour
     public Image colorDot;
     public GameObject activeOxydes;
     public int toWin;
+    public int holesToWin;
 
     public bool zPressed;
 
@@ -83,7 +84,7 @@ public class GameSettings : MonoBehaviour
 
     public void WinLevel()
     {
-        if(toWin == 0)
+        if(toWin == 0 && holesToWin == 0)
         {
             StartCoroutine(NextLevel());
         }

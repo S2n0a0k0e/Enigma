@@ -14996,7 +14996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7926c8fc9fe72e4398d89ba5bd7498b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oxydePairs: 2
+  oxydePairs: 0
   listOfAll: 
   shuffledList: 
   colors:
@@ -15016,6 +15016,7 @@ MonoBehaviour:
   colorDot: {fileID: 0}
   activeOxydes: {fileID: 0}
   toWin: 0
+  holesToWin: 2
   zPressed: 0
 --- !u!4 &1862117063
 Transform:

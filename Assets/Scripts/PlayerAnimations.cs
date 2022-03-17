@@ -16,7 +16,7 @@ public class PlayerAnimations : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(targetGameObject.GetComponent<GameSettings>().toWin == 0)
+        if(targetGameObject.GetComponent<GameSettings>().toWin == 0 && targetGameObject.GetComponent<GameSettings>().holesToWin == 0)
         {
             animator.SetBool("allOxydes", true);
         }
