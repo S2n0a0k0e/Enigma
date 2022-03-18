@@ -1551,6 +1551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meditation_hollow (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7536317134354588349, guid: 3afdd7869b55c8f419947373a1636d25, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7536317134354588351, guid: 3afdd7869b55c8f419947373a1636d25, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
