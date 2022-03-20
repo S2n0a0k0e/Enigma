@@ -2521,6 +2521,7 @@ GameObject:
   - component: {fileID: 367216869}
   - component: {fileID: 367216868}
   - component: {fileID: 367216867}
+  - component: {fileID: 367216875}
   m_Layer: 9
   m_Name: Player (1)
   m_TagString: Player
@@ -2696,6 +2697,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367216865}
   m_CullTransparentMesh: 1
+--- !u!114 &367216875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367216865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 605632789ceff5f429dac83b2001bce6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inHole: 0
+  stillInHole: 1
+  gameScript: {fileID: 1862117062}
 --- !u!1 &378270701
 GameObject:
   m_ObjectHideFlags: 0
@@ -12241,6 +12257,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374117358}
   m_CullTransparentMesh: 1
+--- !u!1 &1382535413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7536317134354588344, guid: 3afdd7869b55c8f419947373a1636d25, type: 3}
+  m_PrefabInstance: {fileID: 981404193276796859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &1382535414
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382535413}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 0.5}
+  m_Direction: 0
 --- !u!1001 &1383131878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16534,6 +16571,7 @@ GameObject:
   - component: {fileID: 2135703784}
   - component: {fileID: 2135703785}
   - component: {fileID: 2135703786}
+  - component: {fileID: 2135703787}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -16709,6 +16747,21 @@ MonoBehaviour:
   animator: {fileID: 2135703785}
   player: {fileID: 2135703777}
   targetGameObject: {fileID: 1862117061}
+--- !u!114 &2135703787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135703777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 605632789ceff5f429dac83b2001bce6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inHole: 0
+  stillInHole: 1
+  gameScript: {fileID: 1862117062}
 --- !u!1001 &2136516565
 PrefabInstance:
   m_ObjectHideFlags: 0
