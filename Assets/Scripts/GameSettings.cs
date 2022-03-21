@@ -9,6 +9,8 @@ public class GameSettings : MonoBehaviour
 {
     [SerializeField] int oxydePairs;
     int tableSize;
+    
+    [SerializeField] GameObject[] ballList;
     [SerializeField] int[] listOfAll;
     [SerializeField] int[] shuffledList;
 
@@ -27,6 +29,7 @@ public class GameSettings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // ballList = new GameObject[holesToWin];
         tableSize  = 2*oxydePairs;
         listOfAll = new int[tableSize];
         shuffledList= new int[tableSize];
@@ -37,7 +40,7 @@ public class GameSettings : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    async void Update()
     {
         if(Input.GetKeyDown("z"))
         {
@@ -47,7 +50,21 @@ public class GameSettings : MonoBehaviour
         {
             zPressed = false;
         }
+        int filledHolles = 0;
+        for(int i = 0; i < ballList.Length; i++)
+        {
+            if(ballList[i].GetComponent<BallInHollow>().inHole)
+            {
+                filledHolles++;
+            }
+        }
+
+        if(filledHolles == holesToWin)
+        {
+            holesToWin = 0;
+        }
         WinLevel();
+        
     }
 
     private void shuffleOxydes(){

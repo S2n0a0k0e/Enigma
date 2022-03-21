@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallInHollow : MonoBehaviour
 {
     public bool inHole = false;
-    public bool stillInHole = true;
+    public bool stillInHole = false;
     public GameSettings gameScript;
 
     void Start()

@@ -31,6 +31,9 @@ public class MeditationHollow : MonoBehaviour
             if(distance <= 0.2f){
                 col.gameObject.GetComponent<BallInHollow>().inHole = true;
             }
+            else{
+                col.gameObject.GetComponent<BallInHollow>().inHole = false;
+            }
         
     }
 
