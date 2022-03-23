@@ -29,12 +29,20 @@ public class MeditationHollow : MonoBehaviour
             }
             // Debug.Log(distance);
             if(distance <= 0.2f){
-                col.gameObject.GetComponent<BallInHollow>().inHole = true;
+                StartCoroutine(InHollow(col));
+                // col.gameObject.GetComponent<BallInHollow>().inHole = true;
             }
             else{
                 col.gameObject.GetComponent<BallInHollow>().inHole = false;
             }
         
+    }
+
+    IEnumerator InHollow(Collider2D col)
+    {
+
+        yield return new WaitForSeconds(2f);
+        col.gameObject.GetComponent<BallInHollow>().inHole = true; 
     }
 
 
