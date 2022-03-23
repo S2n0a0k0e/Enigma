@@ -10,19 +10,23 @@ public class PlayerAnimations : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(targetGameObject.GetComponent<GameSettings>().toWin == 0 && targetGameObject.GetComponent<GameSettings>().holesToWin == 0)
+        if((targetGameObject.GetComponent<GameSettings>().holesWin == 0 && targetGameObject.GetComponent<GameSettings>().end)
+            ||  (targetGameObject.GetComponent<GameSettings>().holesToWin == 0 && targetGameObject.GetComponent<GameSettings>().toWin == 0))
         {
             animator.SetBool("allOxydes", true);
+            Debug.Log(this.name);
         }
+
     }
 
-    void DestroyPlayer(){
-        Destroy(player);
-    }
+
+    // void DestroyPlayer(){
+    //     Destroy(player);
+    // }
 }

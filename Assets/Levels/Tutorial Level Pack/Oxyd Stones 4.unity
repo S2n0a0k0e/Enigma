@@ -15057,11 +15057,14 @@ MonoBehaviour:
   - {fileID: 8457943267080821618, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   - {fileID: -3627605178879410576, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   oxydes: []
+  end: 0
   colorDot: {fileID: 0}
   activeOxydes: {fileID: 0}
   toWin: 0
   holesToWin: 2
+  holesWin: 0
   zPressed: 0
+  filledHolles: 0
 --- !u!4 &1862117063
 Transform:
   m_ObjectHideFlags: 0
@@ -16747,7 +16750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b804edc38d3e7d14ea45b84d00ce5fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 2135703785}
+  animator: {fileID: 367216868}
   player: {fileID: 2135703777}
   targetGameObject: {fileID: 1862117061}
 --- !u!114 &2135703787

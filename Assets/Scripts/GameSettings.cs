@@ -18,14 +18,17 @@ public class GameSettings : MonoBehaviour
 
     [SerializeField] GameObject[] oxydes;
  
+    public bool end = false;
 
     public Image colorDot;
     public GameObject activeOxydes;
     public int toWin;
     public int holesToWin;
+    public int holesWin = 0;
 
     public bool zPressed;
 
+    public int filledHolles;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +43,7 @@ public class GameSettings : MonoBehaviour
     }
 
     // Update is called once per frame
-    async void Update()
+    void Update()
     {
         if(Input.GetKeyDown("z"))
         {
@@ -50,7 +53,7 @@ public class GameSettings : MonoBehaviour
         {
             zPressed = false;
         }
-        int filledHolles = 0;
+        filledHolles = 0;
         for(int i = 0; i < ballList.Length; i++)
         {
             if(ballList[i].GetComponent<BallInHollow>().inHole)
@@ -61,8 +64,13 @@ public class GameSettings : MonoBehaviour
 
         if(filledHolles == holesToWin)
         {
-            holesToWin = 0;
+            holesWin = 0;
         }
+        else
+        {
+            holesWin = 1;
+        }
+        EndLevel();
         WinLevel();
         
     }
@@ -101,10 +109,39 @@ public class GameSettings : MonoBehaviour
 
     public void WinLevel()
     {
-        if(toWin == 0 && holesToWin == 0)
+        if(toWin == 0 && holesWin == 0)
         {
-            StartCoroutine(NextLevel());
+            if(holesToWin > 0)
+            {
+                StartCoroutine(InHollow());
+            }
+            else
+            {
+                StartCoroutine(NextLevel());
+            }
+            
         }
+    }
+
+    public void EndLevel()
+    {
+        if(holesWin == 0 && end == true)
+            {
+                StartCoroutine(NextLevel());
+            } 
+        else
+        {
+            end = false;
+        }
+        
+    }
+
+    IEnumerator InHollow()
+    {
+
+        yield return new WaitForSeconds(2f);
+        end = true;
+        
     }
     
 }
