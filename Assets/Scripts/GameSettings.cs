@@ -54,13 +54,16 @@ public class GameSettings : MonoBehaviour
             zPressed = false;
         }
         filledHolles = 0;
-        for(int i = 0; i < ballList.Length; i++)
-        {
-            if(ballList[i].GetComponent<BallInHollow>().inHole)
+        if(holesToWin > 0){
+                for(int i = 0; i < ballList.Length; i++)
             {
-                filledHolles++;
+                if(ballList[i].GetComponent<BallInHollow>().inHole)
+                {
+                    filledHolles++;
+                }
             }
         }
+        
 
         if(filledHolles == holesToWin)
         {
