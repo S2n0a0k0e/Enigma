@@ -9517,7 +9517,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_Text
-      value: 'I hope you enjoy this game! '
+      value: Annoyed?
       objectReference: {fileID: 0}
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -15636,12 +15636,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_Text
-      value: 'Every level is different. To complete
-
-        the level you have to
-        pair all oxydes.
-
-        Good luck!'
+      value: Next level will be easier...
       objectReference: {fileID: 0}
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -16749,12 +16744,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_Text
-      value: 'Every level is different. To complete
-
-        the level you have to
-        pair all oxydes.
-
-        Good luck!'
+      value: Its time for more obstacles!
       objectReference: {fileID: 0}
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_FontData.m_MinSize

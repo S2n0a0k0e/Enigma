@@ -14081,7 +14081,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_Text
-      value: Its time to practise your movement
+      value: More corners?
       objectReference: {fileID: 0}
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -19195,7 +19195,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_Text
-      value: Its time to practise your movement
+      value: Its time to practise your memory
       objectReference: {fileID: 0}
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_FontData.m_MinSize
