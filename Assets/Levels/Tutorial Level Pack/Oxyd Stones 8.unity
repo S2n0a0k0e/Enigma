@@ -1396,6 +1396,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151394978}
   m_CullTransparentMesh: 1
+--- !u!1 &154525266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5099303560664956734, guid: 65774282285be0741a9b324834252da5, type: 3}
+  m_PrefabInstance: {fileID: 1908864825}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &154525269 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5099303560664956726, guid: 65774282285be0741a9b324834252da5, type: 3}
+  m_PrefabInstance: {fileID: 1908864825}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &161249641
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,6 +2272,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 719615333}
     m_Modifications:
+    - target: {fileID: 5099303560664956725, guid: 65774282285be0741a9b324834252da5, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 422354275}
+    - target: {fileID: 5099303560664956725, guid: 65774282285be0741a9b324834252da5, type: 3}
+      propertyPath: targetGameObject
+      value: 
+      objectReference: {fileID: 1862117061}
     - target: {fileID: 5099303560664956733, guid: 65774282285be0741a9b324834252da5, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3619,6 +3637,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42a1e5c018b043646874520dac1d81e6, type: 3}
+--- !u!1 &422354272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5099303560664956734, guid: 65774282285be0741a9b324834252da5, type: 3}
+  m_PrefabInstance: {fileID: 327220157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &422354275 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5099303560664956726, guid: 65774282285be0741a9b324834252da5, type: 3}
+  m_PrefabInstance: {fileID: 327220157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &446080892
 GameObject:
   m_ObjectHideFlags: 0
@@ -17313,8 +17341,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7926c8fc9fe72e4398d89ba5bd7498b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oxydePairs: 4
-  ballList: []
+  oxydePairs: 0
+  ballList:
+  - {fileID: 154525266}
+  - {fileID: 422354272}
   listOfAll: 
   shuffledList: 
   colors:
@@ -17343,7 +17373,7 @@ MonoBehaviour:
   colorDot: {fileID: 0}
   activeOxydes: {fileID: 0}
   toWin: 0
-  holesToWin: 0
+  holesToWin: 2
   holesWin: 0
   zPressed: 0
   filledHolles: 0
@@ -17724,6 +17754,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 719615333}
     m_Modifications:
+    - target: {fileID: 5099303560664956725, guid: 65774282285be0741a9b324834252da5, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 154525269}
+    - target: {fileID: 5099303560664956725, guid: 65774282285be0741a9b324834252da5, type: 3}
+      propertyPath: targetGameObject
+      value: 
+      objectReference: {fileID: 1862117061}
     - target: {fileID: 5099303560664956733, guid: 65774282285be0741a9b324834252da5, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
