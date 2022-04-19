@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3fa3f7f1be69f0949872a4cb24a49668, type: 3}
+  m_Sprite: {fileID: -3245273913595905256, guid: 171595defa65fc54b987f0aa90892c89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 6366992417907302837}
   - component: {fileID: 8998894063640452241}
   m_Layer: 7
-  m_Name: redfiber
+  m_Name: impulse
   m_TagString: UnmovableBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6083549415517630213}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ebc1dfb8bc391e2498ff89e10c6601cc, type: 3}
+  m_Sprite: {fileID: -8021614974507067166, guid: d29073e792d4a1c469bc2b9c257ec2c7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
