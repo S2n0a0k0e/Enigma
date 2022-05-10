@@ -16,7 +16,7 @@ public class PlaygroundArea : MonoBehaviour
         for(int i = 0; i < 260; i++){
             y = i/20;
             x = i - (y*20);
-             ann1[i] = Instantiate(ann[i], new Vector3(x + 0.5f,y + 0.5f), Quaternion.identity, parent);
+             ann1[i] = Instantiate(ann[i], new Vector3(parent.gameObject.transform.position.x + x + 0.5f - 10,parent.gameObject.transform.position.y + y - 6f), Quaternion.identity, parent);
             
         }
     }
