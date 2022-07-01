@@ -145,3 +145,4 @@ Received Import Request.
 Start importing Assets/Levels/Tutorial Level Pack/Oxyd Stones 12.unity using Guid(4da75362658c3e346a9de6b729d7c035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e93f1fddac78985580e57095f73cd8') in 0.003017 seconds 
   Import took 0.008122 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
