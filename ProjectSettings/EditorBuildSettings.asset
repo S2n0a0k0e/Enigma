@@ -32,7 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 5.unity
     guid: c0a37f58ce222d54286f363e7a183ef7
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 7.unity
+    guid: 73c9756380758224aa24e2b4448fd17d
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 8.unity
+    guid: a732478e0a7b4614ab2e70aebe8d3547
   m_configObjects: {}
