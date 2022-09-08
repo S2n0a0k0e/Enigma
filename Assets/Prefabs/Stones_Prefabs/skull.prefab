@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 3576144819943589795}
   - component: {fileID: 348015563450371867}
   m_Layer: 0
-  m_Name: Block
+  m_Name: Skull
   m_TagString: UnmovableBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
