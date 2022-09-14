@@ -16,6 +16,7 @@ public class Skull : MonoBehaviour
         }
         Debug.Log("HIIII");
         col.gameObject.GetComponent<Animator>().SetBool("shattered", true);
+        col.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
     }
 
     public void stopAnim(){
