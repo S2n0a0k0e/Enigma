@@ -14,6 +14,8 @@ public class Skull : MonoBehaviour
         if(!animator.GetBool("isHit")){ 
             animator.SetBool("isHit", true); 
         }
+        Debug.Log("HIIII");
+        col.gameObject.GetComponent<Animator>().SetBool("shattered", true);
     }
 
     public void stopAnim(){
