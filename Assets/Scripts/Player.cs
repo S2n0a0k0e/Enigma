@@ -191,5 +191,9 @@ public class Player : MonoBehaviour
         Destroy(effect);
     }
 
+    void LockPlayer()
+    {
+        this.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+    }
     
 }
