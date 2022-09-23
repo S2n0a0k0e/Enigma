@@ -92,38 +92,38 @@ public class Player : MonoBehaviour
         }
         
         if(velX > velY){
-            if(rb.velocity.y > 0f) 
+            if(rb.velocity.y > 0.001f) 
             {
                 rb.velocity *= new Vector2(1f, ((velX - changeVelocity)/velX));
             }
-            if(rb.velocity.y < 0f) 
+            if(rb.velocity.y < -0.001f) 
             {
                 rb.velocity *= new Vector2(1f, ((velX - changeVelocity)/velX));
             }
-            if(rb.velocity.x > 0f) 
+            if(rb.velocity.x > 0.001f) 
             {
                 rb.velocity = rb.velocity + new Vector2(-changeVelocity, 0f);
             }
-            if(rb.velocity.x < 0f) 
+            if(rb.velocity.x < -0.001f) 
             {
                 rb.velocity = rb.velocity + new Vector2(changeVelocity, 0f);
             }
             
         }
         else {
-            if(rb.velocity.x > 0f) 
+            if(rb.velocity.x > 0.001f) 
             {
                 rb.velocity *= new Vector2(((velY - changeVelocity)/velY), 1f);
             }
-            if(rb.velocity.x < 0f) 
+            if(rb.velocity.x < -0.001f) 
             {
                 rb.velocity *= new Vector2(((velY - changeVelocity)/velY), 1f);
             }
-            if(rb.velocity.y > 0f) 
+            if(rb.velocity.y > 0.001f) 
             {
                 rb.velocity = rb.velocity + new Vector2(0f, -changeVelocity);
             }
-            if(rb.velocity.y < 0f) 
+            if(rb.velocity.y < -0.001f) 
             {
                 rb.velocity = rb.velocity + new Vector2(0f, changeVelocity);
             }
