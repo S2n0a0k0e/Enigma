@@ -30,12 +30,69 @@ EditorBuildSettings:
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 6.unity
     guid: 4270fab633d7bd84e836106670262639
   - enabled: 1
-    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 5v2.unity
-    guid: c0a37f58ce222d54286f363e7a183ef7
-  - enabled: 1
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 7.unity
     guid: 73c9756380758224aa24e2b4448fd17d
   - enabled: 1
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 8.unity
     guid: a732478e0a7b4614ab2e70aebe8d3547
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 9.unity
+    guid: 05833b8143a9e8548a9e8531c6d79820
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 10.unity
+    guid: 7ffd15912cc36bb4a99175bc26c958f6
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 11.unity
+    guid: 93ec894056f539444abebaf02967bea7
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 12.unity
+    guid: 4da75362658c3e346a9de6b729d7c035
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 13.unity
+    guid: 8e81513f3d962da419dfe182abe0a40a
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 14.unity
+    guid: 8e1fe57c9126c954cb65eb6078e73a31
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 15.unity
+    guid: 962fe7ff2212a6f4897db56bea8aaf4f
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 16.unity
+    guid: cbb2c866b26c1bc42b797edcb97056ca
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 17.unity
+    guid: 1ede981b82c81da4f898adaca4b07c10
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 1v2.unity
+    guid: 685b87cb9a87ceb41bd9402648b8c80b
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 2v2.unity
+    guid: 1a00315723a477a428aec5f68c4d648c
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 3v2.unity
+    guid: 7ff0196318e88bb458c7218bc6bb2e67
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 4v2.unity
+    guid: 2dd2018167e9a6f4cb58f11aefbac0e6
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 5v2.unity
+    guid: c0a37f58ce222d54286f363e7a183ef7
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 6v2.unity
+    guid: 4b6346d9c0dd9984ea90e74dd1d63858
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 7v2.unity
+    guid: 482b25a23c742344ab93c393041b5b07
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 8v2.unity
+    guid: 3819363f462199a4ba12d5de91c50687
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 9v2.unity
+    guid: 6f2b2ba6af9197d4cb3f668f5dc8f19e
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 10v2.unity
+    guid: b28c471dba23b614d9e44ec21958678f
+  - enabled: 1
+    path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 11v2.unity
+    guid: 30e4217d342bd394dbe185eb12cd8cef
   m_configObjects: {}

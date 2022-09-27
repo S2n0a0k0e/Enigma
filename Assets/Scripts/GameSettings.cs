@@ -9,7 +9,6 @@ public class GameSettings : MonoBehaviour
 {
     [SerializeField] int oxydePairs;
     int tableSize;
-    
     [SerializeField] GameObject[] ballList;
     [SerializeField] int[] listOfAll;
     [SerializeField] int[] shuffledList;
