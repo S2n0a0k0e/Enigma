@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] GameObject[] inventoryPos = new GameObject[10];
     // [SerializeField] Sprite[] inventoryPos = new Sprite[10];
     public Sprite defaultSpr;
-
+    
     public Sprite spr;
 
     public int count;
@@ -46,6 +46,8 @@ public class Inventory : MonoBehaviour
         settingInventory();
         
     }
+
+    
 
     public void settingInventory(){
         for(int i = 0; i < count; i++){

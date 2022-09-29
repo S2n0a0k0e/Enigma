@@ -14915,6 +14915,7 @@ GameObject:
   - component: {fileID: 703803339}
   - component: {fileID: 703803338}
   - component: {fileID: 703803337}
+  - component: {fileID: 703803340}
   m_Layer: 8
   m_Name: Inventory
   m_TagString: Untagged
@@ -14974,6 +14975,19 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: -1}
   m_SizeDelta: {x: 960, y: 96}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &703803340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703803336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b80e31bcbed9c48a80784c0f9e5064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 282666079}
 --- !u!1001 &705546383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37266,6 +37280,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6083549415517630208, guid: 42a1e5c018b043646874520dac1d81e6, type: 3}
   m_PrefabInstance: {fileID: 1477940416}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1616270401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3486593429551163344, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
+  m_PrefabInstance: {fileID: 347102641}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1624210444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39227,10 +39246,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oxydePairs: 3
-  ballList:
-  - {fileID: 719615332}
+  ballList: []
   listOfAll: 
   shuffledList: 
+  myCamera: {fileID: 282666079}
+  mainPlayer: {fileID: 1616270401}
   colors:
   - {fileID: 8585108282584560873, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   - {fileID: 916876769922974812, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}

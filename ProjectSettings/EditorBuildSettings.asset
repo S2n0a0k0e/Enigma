@@ -41,25 +41,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 10.unity
     guid: 7ffd15912cc36bb4a99175bc26c958f6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 11.unity
     guid: 93ec894056f539444abebaf02967bea7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 12.unity
     guid: 4da75362658c3e346a9de6b729d7c035
-  - enabled: 1
+  - enabled: 0
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 13.unity
     guid: 8e81513f3d962da419dfe182abe0a40a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 14.unity
     guid: 8e1fe57c9126c954cb65eb6078e73a31
-  - enabled: 1
+  - enabled: 0
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 15.unity
     guid: 962fe7ff2212a6f4897db56bea8aaf4f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 16.unity
     guid: cbb2c866b26c1bc42b797edcb97056ca
-  - enabled: 1
+  - enabled: 0
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 17.unity
     guid: 1ede981b82c81da4f898adaca4b07c10
   - enabled: 1

@@ -12,7 +12,8 @@ public class GameSettings : MonoBehaviour
     [SerializeField] GameObject[] ballList;
     [SerializeField] int[] listOfAll;
     [SerializeField] int[] shuffledList;
-
+    [SerializeField] GameObject myCamera;
+    [SerializeField] GameObject mainPlayer;
     [SerializeField] Sprite[] colors;
 
     [SerializeField] GameObject[] oxydes;
@@ -74,7 +75,20 @@ public class GameSettings : MonoBehaviour
         }
         EndLevel();
         WinLevel();
-        
+        MoveCamera();
+
+    }
+
+
+    private void MoveCamera(){
+        if(myCamera.transform.position.x - mainPlayer.transform.position.x < -9.25f)
+        {
+            myCamera.transform.position = myCamera.transform.position + new Vector3(19f, 0f, 0f);
+        }
+        if(myCamera.transform.position.x - mainPlayer.transform.position.x > 9.25f)
+        {
+            myCamera.transform.position = myCamera.transform.position + new Vector3(-19f, 0f, 0f);
+        }
     }
 
     private void shuffleOxydes(){
