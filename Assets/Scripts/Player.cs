@@ -8,7 +8,8 @@ public class Player : MonoBehaviour
 {   
     public float xVelocity = 0f;
     public float yVelocity = 0f;
-
+    public float spawnX = 0f;
+    public float spawnY = 0f;
     public float mouseX1 = 0f;
     public float mouseX2 = 0f;
     public float deltaX = 0f;
@@ -28,11 +29,16 @@ public class Player : MonoBehaviour
     // public GameObject effect;
 
     public Transform effectParent;
-
+    public bool isDead = false;
+    public Inventory inventory;
+    public GameObject toShow;
     
 
     void Start()
     {
+        spawnX = rb.position.x;
+        spawnY = rb.position.y;
+        inventory = GameObject.Find("/Inventory/Inventory").GetComponent<Inventory>();
         particleEffect = GameObject.Find("ParticleOnHit");
     }
     void Update ()
@@ -40,6 +46,46 @@ public class Player : MonoBehaviour
         MoveMouse ();
         VelocityChanger ();
         getPlayerPos();
+        CheckIfAlive();
+    }
+
+    void CheckIfAlive()
+    {
+        int lives = 0;
+        if(isDead == true)
+        {
+            Debug.Log("dead");
+            for(int i = 0; i < inventory.count; i++)
+            {
+                if(inventory.items[i].tag == "Life")
+                {
+                    lives++;
+                }
+            }
+
+            if(lives > 0)
+            {
+                int i = 0;
+                while(inventory.items[i].tag != "Life")
+                {
+                    i++;
+                }
+                
+                Destroy(inventory.items[i]);
+
+
+                for(int j = i; j < inventory.count - 1; j++){
+                    inventory.items[j] = inventory.items[j+1];
+                }
+                inventory.inventoryPos[inventory.count - 1].GetComponent<Image>().sprite = inventory.defaultSpr;
+                inventory.inventoryPos[inventory.count - 1].GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+                inventory.count--;
+            }
+
+                
+        }
+        Debug.Log("isAlive");
+        isDead = false;
     }
 
     void MoveMouse () 

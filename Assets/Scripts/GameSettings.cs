@@ -81,14 +81,18 @@ public class GameSettings : MonoBehaviour
 
 
     private void MoveCamera(){
-        if(myCamera.transform.position.x - mainPlayer.transform.position.x < -9.25f)
+        if(mainPlayer)
         {
-            myCamera.transform.position = myCamera.transform.position + new Vector3(19f, 0f, 0f);
+            if(myCamera.transform.position.x - mainPlayer.transform.position.x < -9.25f)
+            {
+                myCamera.transform.position = myCamera.transform.position + new Vector3(19f, 0f, 0f);
+            }
+            if(myCamera.transform.position.x - mainPlayer.transform.position.x > 9.25f)
+            {
+                myCamera.transform.position = myCamera.transform.position + new Vector3(-19f, 0f, 0f);
+            }
         }
-        if(myCamera.transform.position.x - mainPlayer.transform.position.x > 9.25f)
-        {
-            myCamera.transform.position = myCamera.transform.position + new Vector3(-19f, 0f, 0f);
-        }
+        
     }
 
     private void shuffleOxydes(){

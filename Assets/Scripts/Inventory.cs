@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] GameObject[] items = new GameObject[10];
+    public GameObject[] items = new GameObject[10];
 
     [SerializeField] GameObject additional;
-    [SerializeField] GameObject[] inventoryPos = new GameObject[10];
+    public GameObject[] inventoryPos = new GameObject[10];
     // [SerializeField] Sprite[] inventoryPos = new Sprite[10];
     public Sprite defaultSpr;
     

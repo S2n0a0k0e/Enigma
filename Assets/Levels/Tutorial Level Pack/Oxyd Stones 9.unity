@@ -17940,6 +17940,8 @@ MonoBehaviour:
   ballList: []
   listOfAll: 
   shuffledList: 
+  myCamera: {fileID: 0}
+  mainPlayer: {fileID: 0}
   colors:
   - {fileID: 8585108282584560873, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   - {fileID: 916876769922974812, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
@@ -19692,6 +19694,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3486593429551163351, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 406179714}
     - target: {fileID: 3486593429551163355, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
       propertyPath: targetGameObject
       value: 

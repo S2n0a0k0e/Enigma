@@ -2031,7 +2031,7 @@ GameObject:
   - component: {fileID: 110838995}
   m_Layer: 9
   m_Name: Life 2
-  m_TagString: Untagged
+  m_TagString: Life
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4934,6 +4934,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3486593429551163351, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 406179714}
     - target: {fileID: 3486593429551163355, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
       propertyPath: targetGameObject
       value: 
@@ -40016,7 +40020,7 @@ GameObject:
   - component: {fileID: 1927897085}
   m_Layer: 9
   m_Name: Life
-  m_TagString: Untagged
+  m_TagString: Life
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

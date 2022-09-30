@@ -17,6 +17,7 @@ public class Skull : MonoBehaviour
         Debug.Log("HIIII");
         col.gameObject.GetComponent<Animator>().SetBool("shattered", true);
         col.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+        col.gameObject.GetComponent<Player>().isDead = true;
     }
 
     public void stopAnim(){

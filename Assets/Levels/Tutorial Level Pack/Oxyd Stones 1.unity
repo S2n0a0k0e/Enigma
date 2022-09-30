@@ -15368,6 +15368,8 @@ MonoBehaviour:
   ballList: []
   listOfAll: 
   shuffledList: 
+  myCamera: {fileID: 282666079}
+  mainPlayer: {fileID: 2135703777}
   colors:
   - {fileID: 8585108282584560873, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   - {fileID: 916876769922974812, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
@@ -17031,6 +17033,8 @@ MonoBehaviour:
   playerPosY: 0
   particleEffect: {fileID: 0}
   effectParent: {fileID: 0}
+  isDead: 0
+  inventory: {fileID: 0}
 --- !u!50 &2135703783
 Rigidbody2D:
   serializedVersion: 4
