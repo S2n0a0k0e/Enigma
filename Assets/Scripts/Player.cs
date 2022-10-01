@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {   
@@ -31,8 +32,10 @@ public class Player : MonoBehaviour
     public Transform effectParent;
     public bool isDead = false;
     public Inventory inventory;
-    public GameObject toShow;
-    
+    // public GameObject toShow;
+    private GameObject toShow;
+    public Transform parent;
+    private Animator animator;
 
     void Start()
     {
@@ -40,6 +43,7 @@ public class Player : MonoBehaviour
         spawnY = rb.position.y;
         inventory = GameObject.Find("/Inventory/Inventory").GetComponent<Inventory>();
         particleEffect = GameObject.Find("ParticleOnHit");
+        animator = this.gameObject.GetComponent<Animator>();
     }
     void Update ()
     {
@@ -54,7 +58,7 @@ public class Player : MonoBehaviour
         int lives = 0;
         if(isDead == true)
         {
-            Debug.Log("dead");
+            // Debug.Log("dead");
             for(int i = 0; i < inventory.count; i++)
             {
                 if(inventory.items[i].tag == "Life")
@@ -62,9 +66,10 @@ public class Player : MonoBehaviour
                     lives++;
                 }
             }
-
+            isDead = false;
             if(lives > 0)
             {
+                Debug.Log("SSSSSSSS");
                 int i = 0;
                 while(inventory.items[i].tag != "Life")
                 {
@@ -72,7 +77,7 @@ public class Player : MonoBehaviour
                 }
                 
                 Destroy(inventory.items[i]);
-
+                this.gameObject.GetComponent<Rigidbody2D>().simulated = false;
 
                 for(int j = i; j < inventory.count - 1; j++){
                     inventory.items[j] = inventory.items[j+1];
@@ -80,12 +85,29 @@ public class Player : MonoBehaviour
                 inventory.inventoryPos[inventory.count - 1].GetComponent<Image>().sprite = inventory.defaultSpr;
                 inventory.inventoryPos[inventory.count - 1].GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                 inventory.count--;
+                toShow = Instantiate(this.gameObject, new Vector3(spawnX,spawnY), Quaternion.identity, parent);
+                Destroy(this.gameObject); 
+                
+                toShow.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                toShow.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+                toShow.gameObject.GetComponent<Rigidbody2D>().simulated = true;
+                toShow.gameObject.GetComponent<Animator>().SetBool("shattered", false);
+                
+            }
+            else
+            {
+                Debug.Log("S");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
 
                 
         }
-        Debug.Log("isAlive");
-        isDead = false;
+       
+    }
+
+    public void deadAnim(){
+        animator.SetBool("isHit", false);
+        this.gameObject.GetComponent<Player>().isDead = true;     
     }
 
     void MoveMouse () 

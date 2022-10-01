@@ -19695,6 +19695,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3486593429551163351, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 719615333}
+    - target: {fileID: 3486593429551163351, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
       propertyPath: inventory
       value: 
       objectReference: {fileID: 406179714}

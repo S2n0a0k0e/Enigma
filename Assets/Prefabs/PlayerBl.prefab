@@ -31,7 +31,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3486593429551163344}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -110,6 +110,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xVelocity: 0
   yVelocity: 0
+  spawnX: 0
+  spawnY: 0
   mouseX1: 0
   mouseX2: 0
   deltaX: 0
@@ -121,6 +123,9 @@ MonoBehaviour:
   playerPosY: 0
   particleEffect: {fileID: 0}
   effectParent: {fileID: 0}
+  isDead: 0
+  inventory: {fileID: 0}
+  parent: {fileID: 0}
 --- !u!50 &3486593429551163350
 Rigidbody2D:
   serializedVersion: 4
