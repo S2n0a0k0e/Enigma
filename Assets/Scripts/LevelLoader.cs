@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class LevelLoader : MonoBehaviour
 {
-    [SerializeField] int loadSceneIndex;
+    [SerializeField] string loadSceneIndex;
     
 
     public void LoadScene()

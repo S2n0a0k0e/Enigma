@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53649e951d283814e8ece8491881b75f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadSceneIndex: 1
+  loadSceneIndex: Level Pack  Menu
 --- !u!4 &765532884
 Transform:
   m_ObjectHideFlags: 0

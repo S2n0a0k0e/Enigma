@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53649e951d283814e8ece8491881b75f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadSceneIndex: 0
+  loadSceneIndex: Start Menu
 --- !u!4 &745982943
 Transform:
   m_ObjectHideFlags: 0
@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53649e951d283814e8ece8491881b75f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadSceneIndex: 2
+  loadSceneIndex: Tutorial Pack
 --- !u!1 &1725159498
 GameObject:
   m_ObjectHideFlags: 0
