@@ -1406,6 +1406,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 5099303560664956726, guid: 65774282285be0741a9b324834252da5, type: 3}
   m_PrefabInstance: {fileID: 1908864825}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &154525272 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5099303560664956729, guid: 65774282285be0741a9b324834252da5, type: 3}
+  m_PrefabInstance: {fileID: 1908864825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154525266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1be9dd754697a384e89a44ebf86578de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &161249641
 GameObject:
   m_ObjectHideFlags: 0
@@ -3103,7 +3114,7 @@ MonoBehaviour:
   toShow: {fileID: 0}
   parent: {fileID: 1889319173}
   itemLayerScript: {fileID: 0}
-  mainPlayer: {fileID: 0}
+  mainPlayer: {fileID: 154525272}
 --- !u!1001 &408513005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19800,6 +19811,8 @@ MonoBehaviour:
   - {fileID: 422354272}
   listOfAll: 
   shuffledList: 
+  myCamera: {fileID: 0}
+  mainPlayer: {fileID: 0}
   colors:
   - {fileID: 8585108282584560873, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   - {fileID: 916876769922974812, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}

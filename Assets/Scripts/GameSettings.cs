@@ -63,6 +63,10 @@ public class GameSettings : MonoBehaviour
                 }
             }
         }
+        if(Input.GetKeyDown("q"))
+        {
+            SceneManager.LoadScene("Level Pack  Menu");
+        }
         
 
         if(filledHolles == holesToWin)
