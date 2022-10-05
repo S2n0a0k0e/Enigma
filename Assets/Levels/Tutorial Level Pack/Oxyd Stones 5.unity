@@ -1455,6 +1455,7 @@ MonoBehaviour:
   playerScript: {fileID: 0}
   gameSettingsScript: {fileID: 0}
   mainPlayer: {fileID: 2135703782}
+  helpMe: {fileID: 0}
 --- !u!1 &122519019
 GameObject:
   m_ObjectHideFlags: 0
@@ -19598,6 +19599,8 @@ MonoBehaviour:
   ballList: []
   listOfAll: 
   shuffledList: 
+  myCamera: {fileID: 282666079}
+  mainPlayer: {fileID: 0}
   colors:
   - {fileID: 8585108282584560873, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   - {fileID: 916876769922974812, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
@@ -20252,6 +20255,7 @@ MonoBehaviour:
   playerScript: {fileID: 0}
   gameSettingsScript: {fileID: 0}
   mainPlayer: {fileID: 2135703782}
+  helpMe: {fileID: 0}
 --- !u!1001 &1927941663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21366,6 +21370,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xVelocity: 0
   yVelocity: 0
+  spawnX: 0
+  spawnY: 0
   mouseX1: 0
   mouseX2: 0
   deltaX: 0
@@ -21377,6 +21383,9 @@ MonoBehaviour:
   playerPosY: 0
   particleEffect: {fileID: 0}
   effectParent: {fileID: 0}
+  isDead: 0
+  inventory: {fileID: 0}
+  parent: {fileID: 0}
 --- !u!50 &2135703783
 Rigidbody2D:
   serializedVersion: 4
