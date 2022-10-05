@@ -16,6 +16,7 @@ public class Item : MonoBehaviour
     public GameSettings gameSettingsScript;
 
     public Player mainPlayer;
+    [SerializeField] Player helpMe;
     
 
     void Start()
@@ -23,18 +24,26 @@ public class Item : MonoBehaviour
         invScript = GameObject.Find("/Inventory/Inventory").GetComponent<Inventory>();
         itemLayerScript = GameObject.Find("/MainPlayground/ItemLayer").GetComponent<ItemLayer>();
         gameSettingsScript = GameObject.Find("LevelSettings").GetComponent<GameSettings>();
-        mainPlayer = GameObject.Find("PlayerLayer/Player").GetComponent<Player>();
+        // mainPlayer = GameObject.Find("PlayerLayer/Player").GetComponent<Player>();
+        
+        
+        // helpMe = GameObject.Find("PlayerLayer").transform.GetChild(0).GetComponent<Player>();
+        
         
     }
 
     void Update()
     {
+        if(GameObject.Find("PlayerLayer").transform.GetChild(0))
+        {
+            mainPlayer = GameObject.Find("PlayerLayer").transform.GetChild(0).GetComponent<Player>();
+        }
         
     }
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D col){
-        
-        if(!gameSettingsScript.zPressed){
+        Debug.Log(this.gameObject.name);
+        if(!gameSettingsScript.zPressed && col.gameObject.tag == "Player"){
             playerScript = col.gameObject.GetComponent<Player>();
             int pickedItemPosX = (int) (playerScript.playerPosX - 0.5f);
             int pickedItemPosY = (int) (playerScript.playerPosY - 0.5f);

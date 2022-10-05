@@ -27,6 +27,6 @@ public class PlayerAnimations : MonoBehaviour
 
 
     void DestroyPlayer(){
-        Destroy(player);
+        // Destroy(player);
     }
 }

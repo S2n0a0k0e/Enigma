@@ -45,6 +45,11 @@ public class GameSettings : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameObject.Find("PlayerLayer").transform.GetChild(0))
+        {
+            mainPlayer = GameObject.Find("PlayerLayer").transform.GetChild(0).gameObject;
+        }
+
         if(Input.GetKeyDown("z"))
         {
             zPressed = true;

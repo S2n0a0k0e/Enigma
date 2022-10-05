@@ -41,9 +41,15 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        nextItem();
-        useItem();
-        settingInventory();
+        if(GameObject.Find("PlayerLayer").transform.GetChild(0))
+        {
+            playerScript = GameObject.Find("PlayerLayer").transform.GetChild(0).GetComponent<Player>();
+            mainPlayer = GameObject.Find("PlayerLayer").transform.GetChild(0).GetComponent<Player>();
+            nextItem();
+            useItem();
+            settingInventory();
+        }
+        
         
     }
 

@@ -1225,7 +1225,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   playerScript: {fileID: 0}
   gameSettingsScript: {fileID: 0}
-  mainPlayer: {fileID: 0}
+  mainPlayer: {fileID: 154525272}
+  helpMe: {fileID: 0}
 --- !u!1 &122519019
 GameObject:
   m_ObjectHideFlags: 0
@@ -19811,8 +19812,8 @@ MonoBehaviour:
   - {fileID: 422354272}
   listOfAll: 
   shuffledList: 
-  myCamera: {fileID: 0}
-  mainPlayer: {fileID: 0}
+  myCamera: {fileID: 282666079}
+  mainPlayer: {fileID: 154525266}
   colors:
   - {fileID: 8585108282584560873, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   - {fileID: 916876769922974812, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
@@ -20099,7 +20100,7 @@ MonoBehaviour:
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
-  - rows: 000000000000000000000000000000
+  - rows: 000000010000000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
@@ -20112,7 +20113,7 @@ MonoBehaviour:
   - rows: 000000000000000000000100000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
-  - rows: 000000000100000000000000000000
+  - rows: 000000010000000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
   - rows: 000000000000000000000000000000
@@ -20683,7 +20684,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   playerScript: {fileID: 0}
   gameSettingsScript: {fileID: 0}
-  mainPlayer: {fileID: 0}
+  mainPlayer: {fileID: 154525272}
+  helpMe: {fileID: 0}
 --- !u!1001 &1953552812
 PrefabInstance:
   m_ObjectHideFlags: 0

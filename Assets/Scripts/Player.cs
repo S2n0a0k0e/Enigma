@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
         inventory = GameObject.Find("/Inventory/Inventory").GetComponent<Inventory>();
         particleEffect = GameObject.Find("ParticleOnHit");
         animator = this.gameObject.GetComponent<Animator>();
+        parent = GameObject.Find("PlayerLayer").transform;
     }
     void Update ()
     {

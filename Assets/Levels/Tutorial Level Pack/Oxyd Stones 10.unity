@@ -2148,6 +2148,7 @@ MonoBehaviour:
   playerScript: {fileID: 0}
   gameSettingsScript: {fileID: 0}
   mainPlayer: {fileID: 0}
+  helpMe: {fileID: 0}
 --- !u!1001 &111156526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4848,6 +4849,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3486593429551163344, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486593429551163344, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3486593429551163347, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
@@ -40186,6 +40191,7 @@ MonoBehaviour:
   playerScript: {fileID: 0}
   gameSettingsScript: {fileID: 0}
   mainPlayer: {fileID: 0}
+  helpMe: {fileID: 0}
 --- !u!1001 &1929194278
 PrefabInstance:
   m_ObjectHideFlags: 0

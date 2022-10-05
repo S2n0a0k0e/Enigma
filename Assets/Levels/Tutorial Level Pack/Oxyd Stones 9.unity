@@ -775,6 +775,7 @@ MonoBehaviour:
   playerScript: {fileID: 2135703782}
   gameSettingsScript: {fileID: 0}
   mainPlayer: {fileID: 0}
+  helpMe: {fileID: 0}
 --- !u!1 &122519019
 GameObject:
   m_ObjectHideFlags: 0
@@ -17940,7 +17941,7 @@ MonoBehaviour:
   ballList: []
   listOfAll: 
   shuffledList: 
-  myCamera: {fileID: 0}
+  myCamera: {fileID: 282666079}
   mainPlayer: {fileID: 0}
   colors:
   - {fileID: 8585108282584560873, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
@@ -18473,6 +18474,7 @@ MonoBehaviour:
   playerScript: {fileID: 2135703782}
   gameSettingsScript: {fileID: 0}
   mainPlayer: {fileID: 0}
+  helpMe: {fileID: 0}
 --- !u!1001 &1949675661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19609,6 +19611,10 @@ PrefabInstance:
     - target: {fileID: 3486593429551163344, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
       propertyPath: m_Name
       value: PlayerBl
+      objectReference: {fileID: 0}
+    - target: {fileID: 3486593429551163344, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3486593429551163347, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
       propertyPath: m_Pivot.x
