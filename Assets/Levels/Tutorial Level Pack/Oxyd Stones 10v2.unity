@@ -41700,9 +41700,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1889319173}
     m_Modifications:
+    - target: {fileID: 1167309083, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100
+      objectReference: {fileID: 0}
     - target: {fileID: 1167309085, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_Text
-      value: It is first big level, good luck!
+      value: 'For now, it is your last level.
+
+        I hope you enjoy this game!'
       objectReference: {fileID: 0}
     - target: {fileID: 7280285862079606849, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_Name
@@ -41774,11 +41780,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7280285862079606854, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7280285862079606854, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7280285862079606854, guid: 3b7b76425a3ee8f45a488b97fdf9733e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

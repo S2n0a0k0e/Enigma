@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial Pack Hard.unity
     guid: 575ad9f84fe25654faf708a789c28e7c
   - enabled: 1
+    path: Assets/Scenes/Info.unity
+    guid: e15142c11ecae924780a239b9c699d21
+  - enabled: 1
     path: Assets/Levels/Tutorial Level Pack/Oxyd Stones 1.unity
     guid: 09275ef5580967245851b01fe097992a
   - enabled: 1
