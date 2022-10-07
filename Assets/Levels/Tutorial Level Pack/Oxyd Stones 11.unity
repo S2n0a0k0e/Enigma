@@ -2376,6 +2376,7 @@ MonoBehaviour:
   playerScript: {fileID: 0}
   gameSettingsScript: {fileID: 0}
   mainPlayer: {fileID: 0}
+  helpMe: {fileID: 0}
 --- !u!1001 &112627871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31961,6 +31962,7 @@ GameObject:
   - component: {fileID: 703803339}
   - component: {fileID: 703803338}
   - component: {fileID: 703803337}
+  - component: {fileID: 703803340}
   m_Layer: 8
   m_Name: Inventory
   m_TagString: Untagged
@@ -32020,6 +32022,19 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: -1}
   m_SizeDelta: {x: 960, y: 96}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &703803340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703803336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b80e31bcbed9c48a80784c0f9e5064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 282666079}
 --- !u!1001 &705546383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49931,6 +49946,8 @@ MonoBehaviour:
   - {fileID: 641099579}
   listOfAll: 
   shuffledList: 
+  myCamera: {fileID: 282666079}
+  mainPlayer: {fileID: 0}
   colors:
   - {fileID: 8585108282584560873, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   - {fileID: 916876769922974812, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
@@ -51044,6 +51061,7 @@ MonoBehaviour:
   playerScript: {fileID: 0}
   gameSettingsScript: {fileID: 0}
   mainPlayer: {fileID: 0}
+  helpMe: {fileID: 0}
 --- !u!1001 &1946659787
 PrefabInstance:
   m_ObjectHideFlags: 0

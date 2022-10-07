@@ -100,6 +100,14 @@ public class GameSettings : MonoBehaviour
             {
                 myCamera.transform.position = myCamera.transform.position + new Vector3(-19f, 0f, 0f);
             }
+            if(myCamera.transform.position.y - mainPlayer.transform.position.y < -6.25f)
+            {
+                myCamera.transform.position = myCamera.transform.position + new Vector3(0f, 12f, 0f);
+            }
+            if(myCamera.transform.position.y - mainPlayer.transform.position.y > 4.75f)
+            {
+                myCamera.transform.position = myCamera.transform.position + new Vector3(0f, -12f, 0f);
+            }
         }
         
     }
