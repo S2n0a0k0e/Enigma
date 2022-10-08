@@ -10387,7 +10387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44556a67475ee1146b5a1179947b29fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterPause: 0.2
+  letterPause: 21.37
 --- !u!1001 &1140176864
 PrefabInstance:
   m_ObjectHideFlags: 0

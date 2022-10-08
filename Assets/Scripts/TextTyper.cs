@@ -20,6 +20,7 @@
 
      Image parentImage;
      void Start () {
+        letterPause = 0.05f;
          textComp = GetComponent<TextMeshProUGUI>();
          textComp.text = "";    
          parentImage = this.transform.parent.gameObject.GetComponent<Image>();
