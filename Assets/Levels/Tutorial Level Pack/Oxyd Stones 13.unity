@@ -894,6 +894,7 @@ MonoBehaviour:
   playerScript: {fileID: 0}
   gameSettingsScript: {fileID: 0}
   mainPlayer: {fileID: 0}
+  helpMe: {fileID: 0}
 --- !u!1 &122519019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,6 +1742,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3486593429551163355, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
+      propertyPath: targetGameObject
+      value: 
+      objectReference: {fileID: 1862117061}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b4c1717b4d0d7c44969e234d92e5605, type: 3}
 --- !u!224 &347102642 stripped
@@ -2374,6 +2379,11 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6083549415517630208, guid: 42a1e5c018b043646874520dac1d81e6, type: 3}
   m_PrefabInstance: {fileID: 423725680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &423970829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6083549415517630213, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+  m_PrefabInstance: {fileID: 1121239899}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &446080892
 GameObject:
@@ -10420,6 +10430,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6083549415517630208, guid: 42a1e5c018b043646874520dac1d81e6, type: 3}
   m_PrefabInstance: {fileID: 670774716}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &673141092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6083549415517630213, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+  m_PrefabInstance: {fileID: 1605428565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &703803336
 GameObject:
   m_ObjectHideFlags: 0
@@ -11653,6 +11668,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6083549415517630208, guid: 42a1e5c018b043646874520dac1d81e6, type: 3}
   m_PrefabInstance: {fileID: 1329299421}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &949502986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6083549415517630213, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+  m_PrefabInstance: {fileID: 1667516413}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &962382182
 GameObject:
   m_ObjectHideFlags: 0
@@ -12036,12 +12056,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: oxydd
       objectReference: {fileID: 0}
+    - target: {fileID: 8206305381694133521, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+      propertyPath: questionMark
+      value: 
+      objectReference: {fileID: 545081217}
+    - target: {fileID: 8206305381694133521, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+      propertyPath: targetGameObject
+      value: 
+      objectReference: {fileID: 1862117061}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b9cc42749116549a53959ed7895990, type: 3}
 --- !u!224 &1121239900 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6083549415517630208, guid: a8b9cc42749116549a53959ed7895990, type: 3}
   m_PrefabInstance: {fileID: 1121239899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1121964516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6083549415517630213, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+  m_PrefabInstance: {fileID: 1724786916}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1122116828
 GameObject:
@@ -16113,6 +16146,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: oxydd (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8206305381694133521, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+      propertyPath: questionMark
+      value: 
+      objectReference: {fileID: 545081217}
+    - target: {fileID: 8206305381694133521, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+      propertyPath: targetGameObject
+      value: 
+      objectReference: {fileID: 1862117061}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b9cc42749116549a53959ed7895990, type: 3}
 --- !u!224 &1605428566 stripped
@@ -16324,6 +16365,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: oxydd (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8206305381694133521, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+      propertyPath: questionMark
+      value: 
+      objectReference: {fileID: 545081217}
+    - target: {fileID: 8206305381694133521, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+      propertyPath: targetGameObject
+      value: 
+      objectReference: {fileID: 1862117061}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b9cc42749116549a53959ed7895990, type: 3}
 --- !u!224 &1667516414 stripped
@@ -16511,6 +16560,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: oxydd (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8206305381694133521, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+      propertyPath: questionMark
+      value: 
+      objectReference: {fileID: 545081217}
+    - target: {fileID: 8206305381694133521, guid: a8b9cc42749116549a53959ed7895990, type: 3}
+      propertyPath: targetGameObject
+      value: 
+      objectReference: {fileID: 1862117061}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b9cc42749116549a53959ed7895990, type: 3}
 --- !u!224 &1724786917 stripped
@@ -17034,11 +17091,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7926c8fc9fe72e4398d89ba5bd7498b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oxydePairs: 0
+  oxydePairs: 2
   ballList:
   - {fileID: 641099579}
   listOfAll: 
   shuffledList: 
+  myCamera: {fileID: 282666079}
+  mainPlayer: {fileID: 641099579}
   colors:
   - {fileID: 8585108282584560873, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   - {fileID: 916876769922974812, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
@@ -17053,19 +17112,15 @@ MonoBehaviour:
   - {fileID: 8457943267080821618, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   - {fileID: -3627605178879410576, guid: f3d298a40b8a9c74a9dd95864b433cb0, type: 3}
   oxydes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 423970829}
+  - {fileID: 673141092}
+  - {fileID: 1121964516}
+  - {fileID: 949502986}
   end: 0
   colorDot: {fileID: 0}
   activeOxydes: {fileID: 0}
   toWin: 0
-  holesToWin: 2
+  holesToWin: 0
   holesWin: 0
   zPressed: 0
   filledHolles: 0
@@ -17467,6 +17522,7 @@ MonoBehaviour:
   playerScript: {fileID: 0}
   gameSettingsScript: {fileID: 0}
   mainPlayer: {fileID: 0}
+  helpMe: {fileID: 0}
 --- !u!1001 &1958602186
 PrefabInstance:
   m_ObjectHideFlags: 0
