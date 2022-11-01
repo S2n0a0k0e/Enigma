@@ -137,3 +137,4 @@ Received Import Request.
 Start importing Assets/Animations/actorPulse/Actor_shadow.controller using Guid(e44a4dfc5ba6c794d9f2624b0e5fa199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbafd829b36d97f7797c24129a1289dc') in 0.326916 seconds 
   Import took 0.366227 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
