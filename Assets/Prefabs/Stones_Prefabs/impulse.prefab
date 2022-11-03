@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3546872263467098575}
   - component: {fileID: 1694297850713029842}
   - component: {fileID: 3234513218531507982}
+  - component: {fileID: 8545845341160519226}
   m_Layer: 7
   m_Name: Shadow
   m_TagString: Untagged
@@ -111,6 +112,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8545845341160519226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578807639517954565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028527690b978834491786502f0df396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3234513218531507982}
 --- !u!1 &6083549415517630213
 GameObject:
   m_ObjectHideFlags: 0
