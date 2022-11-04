@@ -5,13 +5,15 @@ using UnityEngine;
 public class Pulse : MonoBehaviour
 {
     public Animator animator;
-    
+    public Animator shadow;
     
     void OnCollisionEnter2D(Collision2D col)
     {
         Rigidbody2D rb = col.gameObject.GetComponent<Rigidbody2D>();
+        
         if(!animator.GetBool("isHit") && col.gameObject.tag != "UnmovableBlock"){ 
             animator.SetBool("isHit", true); 
+            shadow.SetBool("isHit", true);
         }
 
         

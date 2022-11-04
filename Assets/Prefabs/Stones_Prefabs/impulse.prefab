@@ -376,3 +376,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 190602120}
+  shadow: {fileID: 3234513218531507982}
