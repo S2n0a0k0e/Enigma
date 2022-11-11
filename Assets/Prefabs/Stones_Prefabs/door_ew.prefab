@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 6083549415517630211}
   - component: {fileID: 6366992417907302837}
   - component: {fileID: 8998894063640452241}
+  - component: {fileID: 337860190543866966}
   m_Layer: 7
   m_Name: door_ew
   m_TagString: UnmovableBlock
@@ -204,6 +205,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &337860190543866966
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6083549415517630213}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 505c5afe56c699b4eb03a214f442ec0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6787546802975173065
 GameObject:
   m_ObjectHideFlags: 0
