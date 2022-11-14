@@ -137,3 +137,4 @@ Received Import Request.
 Start importing Assets/Animations/gate/gate_close_shadow_ns.anim using Guid(36a5b7a5df6fbb84981090dddb725247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e696f7bf80c5dc3b023ac1aac62d12a') in 0.349806 seconds 
   Import took 0.646050 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
